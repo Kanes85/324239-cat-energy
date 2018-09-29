@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Грищишин](https://up.htmlacademy.ru/adaptive/15/user/324239).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Лоскутова](https://htmlacademy.ru/profile/id33515).
 
 ---
 
