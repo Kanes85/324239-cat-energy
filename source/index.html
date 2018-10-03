@@ -12,22 +12,28 @@
 <body>
 
   <!-- font-family: 'Oswald', sans-serif; -->
-  <header>
+  <header class="page-header">
     <!-- Cat Energy -->
-    <a href="#">
-    <img src="http://placehold.it/150x100" width="100" height="30" alt="Логотип Cat Energy">
+    <a class="page-header__logo" href="#">
+    <img class="page-header__logo-image" src="http://placehold.it/150x100" width="100" height="30" alt="Логотип Cat Energy">
     </a>
-    <nav>
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="catalog.html">Каталог продукции</a></li>
-        <li><a href="form.html">Подбор программы</a></li>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list_item site-list__item--active">
+          <a href="#">Главная</a>
+        </li>
+        <li class="site-list_item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list_item">
+          <a href="form.html">Подбор программы</a>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
+  <main class="page-main">
+    <section class="">
       <h1>Функциональное питание для котов</h1>
       <p>Занялся собой? Займись котом!</p>
 
