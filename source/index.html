@@ -1,61 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="../normalize.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <title>Cat Energy</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="../normalize.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <title>Cat Energy</title>
+</head>
+
+<body>
 
   <!-- font-family: 'Oswald', sans-serif; -->
+  <header>
+    <!-- Cat Energy -->
+    <a href="#">
+    <img src="http://placehold.it/150x100" width="100" height="30" alt="Логотип Cat Energy">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="catalog.html">Каталог продукции</a></li>
+        <li><a href="form.html">Подбор программы</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    Cat Energy
-    Главная
-    Каталог продукции
-    Подбор программы
+  <main>
+    <section>
+      <h1>Функциональное питание для котов</h1>
+      <p>Занялся собой? Займись котом!</p>
 
-    Функциональное питание для котов
-    Занялся собой? Займись котом!
+      <a href="#">Подобрать программу</a>
+    </section>
+    <section>
+      <h2 class="visyaly-hidden">Выбор программы питания</h2>
+      <h3>Похудение</h3>
+      <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+      <a href="#">Каталог Slim</a>
 
-    Подобрать программу
+      <h3>Набор массы</h3>
+      <p>Заработать авторитет среди дворовых котов и даже собак?
+        Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+      <a href="#">Католог Pro</a>
+    </section>
 
-    Похудение
-    Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-    Каталог Slim
+    <section>
+      <h2>Как это работает</h2>
+      <p>Функциональное питание содержит только полезные питательные вещества.</p>
+      <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+      <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
+      <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+    </section>
 
-    Набор массы
-    Заработать авторитет среди дворовых котов и даже собак?
-    Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-    Католог Pro
+    <section>
+      <h2>Живой пример</h2>
+      <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+      <div>
+        <b>5 кг</b>
+        <p>Снижение веса</p>
+      </div>
+      <div>
+        <b>60 дней</b>
+        <p>Затрачено времени</p>
+      </div>
+      <p>Затраты на питание: 15000 руб.</p>
 
-    Как это работает
-    Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+      <!-- Слайдер с переключателем -->
+      <div>
+        <img src="http://placehold.it/150x100" width="200" height="150" alt="Кот до начала программы">
+        <img src="http://placehold.it/150x100" width="200" height="150" alt="Кот после прохождения программы">
+      </div>
 
-    5 кг
-    Снижение веса
+      <input id="before" type="radio" name="example" value="cat_before">
+      <label class="visyaly-hidden" for="before">Было</label>
+      <input id="after" type="radio" name="example" value="cat_after">
+      <label class="visyaly-hidden" for="after">Стало</label>
+    </section>
+  </main>
 
-    60 дней
-    Затрачено времени
+<footer>
 
-    Затраты на питание: 15000 руб.
-
-    <!-- Слайдер с переключателем -->
-    Было  Стало
-
-    Приглашаем к сотрудничеству дилеров!
-    ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+  <section>
+    <h2 class="visyaly-hidden">Сотрудничество и наш адрес</h2>
+    <b>Приглашаем к сотрудничеству дилеров!</b>
+    <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
 
     <!-- КАРТА -->
+    <img src="http://placehold.it/150x100" width="200" height="150" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+  </section>
 
-    CAT ENERGY
+  <img src="" width="100" height="50" alt="Логотип Cat Energy">
+    <!-- CAT ENERGY -->
+    <div>
+      <ul>
+        <li><a href="#">Вконтакте</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
 
-    Вконтакте
-    instagram
-    Facebook
+    <div>
+      <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
 
-    HTML Academy
-
-  </body>
+</body>
 </html>
