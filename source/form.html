@@ -46,62 +46,62 @@
         <fieldset class="selection-form__about about-cat">
           <legend class="selection-form-title visyaly-hidden">Данные кота</legend>
           <p>
-            <label class="" for="">Имя:*</label>
-            <input class="" id="" type="text">
+            <label class="about-cat__name-label" for="name-cat">Имя:*</label>
+            <input class="about-cat__name" id="name-cat" type="text">
           </p>
           <p>
-            <label class="" for="">Вес (кг):*</label>
-            <input class="" id="" type="text">
+            <label class="about-cat__weight-label" for="weight-cat">Вес (кг):*</label>
+            <input class="about-cat__weight" id="weight-cat" type="text">
           </p>
           <p>
-            <label class="" for="">Возраст (лет):</label>
-            <input class="" id="" type="text">
+            <label class="about-cat__age-label" for="age-cat">Возраст (лет):</label>
+            <input class="about-cat__age" id="age-cat" type="text">
           </p>
 
           <!-- Радиобаттоны -->
-          <label for="">Похудение</label>
-          <input class="" id="" type="radio" name="" value="">
-          <label for="">Набор массы</label>
-          <input class="" id="" type="radio" name="" value="">
-          <label for="">Не знаю (нуэен ваш совет)</label>
-          <input class="" id="" type="radio" name="" value="">
+          <input class="about-cat__target" id="slim-cat" type="radio" name="about-cat" value="slim">
+          <label class="about-cat__target-label" for="slim-cat">Похудение</label>
+          <input class="about-cat__target" id="mass-cat" type="radio" name="about-cat" value="mass">
+          <label class="about-cat__target-label" for="mass-cat">Набор массы</label>
+          <input class="about-cat__target" id="need-recommendation" type="radio" name="about-cat" value="recommendation">
+          <label class="about-cat__target-label" for="need-recommendation">Не знаю (нуэен ваш совет)</label>
         </fieldset>
 
-        <fieldset class="">
-          <legend class="">Контактные данные (владельца кота)</legend>
+        <fieldset class="selection-form__contacts-owner contacts-owner">
+          <legend class="selection-form-title contacts-owner__title">Контактные данные (владельца кота)</legend>
           <!-- Форма текстовые поля -->
-          <p class="">
-            <label for="">e-mail:*</label>
-            <input class="" id="" type="email">
+          <p>
+            <label class="contacts-owner__email-label" for="email-owner">e-mail:*</label>
+            <input class="contacts-owner__email" id="email-owner" type="email">
           </p>
-          <p class="">
-            <label for="">Телефон:*</label>
-            <input class="" id="" type="tel">
+          <p>
+            <label class="contacts-owner__phone-label" for="tel-owner">Телефон:*</label>
+            <input class="contacts-owner__phone" id="tel-owner" type="tel">
           </p>
         </fieldset>
 
-        <fieldset class="">
-          <legend class="">Коментарий</legend>
-          <!-- Текстовое поле текстарея -->
-          <textarea class="">Расскажите о всех повадках кота</textarea>
+        <fieldset class="selection-form__comments comments">
+          <legend class="selection-form-title comments__title">Коментарий</legend>
+          <!-- Текстовое поле textarea -->
+          <textarea class="comments__box">Расскажите о всех повадках кота</textarea>
         </fieldset>
 
-        <fieldset class="">
-          <legend class="">Дополнительно</legend>
+        <fieldset class="selection-form__additionally additionally">
+          <legend class="selection-form-title additionally__title">Дополнительно</legend>
           <!-- Чекбоксы -->
-          <label for="">Сахарозаменитель</label>
-          <input class="" id="" type="checkbox" name="" value="">
-          <label for="">Питьевая вода</label>
-          <input class="" id="" type="checkbox" name="" value="">
-          <label for="">Молоко</label>
-          <input class="" id="" type="checkbox" name="" value="">
-          <label for="">Витамины</label>
-          <input class="" id="" type="checkbox" name="" value="">
+          <input class="additionally__target" id="additionally-sugar" type="checkbox" name="additionally-sugar" value="sugar-substitute">
+          <label class="additionally__target-label" for="additionally-sugar">Сахарозаменитель</label>
+          <input class="additionally__target" id="additionally-water" type="checkbox" name="additionally-water" value="drinking-water">
+          <label class="additionally__target-label" for="additionally-water">Питьевая вода</label>
+          <input class="additionally__target" id="additionally-milk" type="checkbox" name="additionally-milk" value="milk">
+          <label class="additionally__target-label" for="additionally-milk">Молоко</label>
+          <input class="additionally__target" id="additionally-vitamins" type="checkbox" name="additionally-vitamins" value="vitamins">
+          <label class="additionally__target-label" for="additionally-vitamins">Витамины</label>
         </fieldset>
 
-        <button class="">Отправить заявку</button>
+        <button class="button selection-form__button">Отправить заявку</button>
 
-        <small class="">* - Обязательные поля</small>
+        <small class="selection-form__important-information">* - Обязательные поля</small>
       </form>
     </section>
 
@@ -124,6 +124,7 @@
     </section>
 
     <section class="main-footer__about">
+      <h2 class="visyaly-hidden">Социальные сети и разработчик</h2>
       <div class="main-footer__logo">
         <img class="main-footer__logo-image logo-image" src="http://placehold.it/150x100" width="100" height="50" alt="Логотип Cat Energy">
         <!-- CAT ENERGY -->
