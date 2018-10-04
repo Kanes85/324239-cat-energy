@@ -15,101 +15,133 @@
   <header class="page-header">
     <!-- Cat Energy -->
     <a class="page-header__logo" href="#">
-    <img class="page-header__logo-image" src="http://placehold.it/150x100" width="100" height="30" alt="Логотип Cat Energy">
+      <img class="page-header__logo-image logo-image" src="http://placehold.it/150x100" width="100" height="30" alt="Логотип Cat Energy">
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li class="site-list_item site-list__item--active">
-          <a href="#">Главная</a>
+        <li class="site-list_item">
+          <a class="site-list_item-link site-list__link--active" href="#">Главная</a>
         </li>
         <li class="site-list_item">
-          <a href="catalog.html">Каталог продукции</a>
+          <a class="site-list_item-link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list_item">
-          <a href="form.html">Подбор программы</a>
+          <a class="site-list_item-link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="page-main">
-    <section class="">
-      <h1>Функциональное питание для котов</h1>
-      <p>Занялся собой? Займись котом!</p>
 
-      <a href="#">Подобрать программу</a>
+    <section class="presentation">
+      <h1 class="presentation__title">Функциональное питание для котов</h1>
+      <p class="presentation__description">Занялся собой? Займись котом!</p>
+      <a href="#" class="button presentation__button">Подобрать программу</a>
     </section>
-    <section>
+
+    <section class="target">
       <h2 class="visyaly-hidden">Выбор программы питания</h2>
-      <h3>Похудение</h3>
-      <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-      <a href="#">Каталог Slim</a>
 
-      <h3>Набор массы</h3>
-      <p>Заработать авторитет среди дворовых котов и даже собак?
-        Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-      <a href="#">Католог Pro</a>
+      <div class="target__wrapper">
+        <h3 class="target__title">Похудение</h3>
+        <p class="target__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a href="#" class="target__button">Каталог Slim</a>
+      </div>
+
+      <div class="target__wrapper">
+        <h3 class=target__title"">Набор массы</h3>
+        <p class="target__description">Заработать авторитет среди дворовых котов и даже собак?
+          Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <a href="#" class="target__button">Католог Pro</a>
+      </div>
+
     </section>
 
-    <section>
-      <h2>Как это работает</h2>
-      <p>Функциональное питание содержит только полезные питательные вещества.</p>
-      <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-      <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
-      <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+    <section class="how-works">
+      <h2 class="how-works__title">Как это работает</h2>
+      <p class="how-works__item">Функциональное питание содержит только полезные питательные вещества.</p>
+      <p class="how-works__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+      <p class="how-works__item">Замените один-два приема обычной еды на наше функциональное питание.</p>
+      <p class="how-works__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
     </section>
 
-    <section>
-      <h2>Живой пример</h2>
-      <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div>
-        <b>5 кг</b>
-        <p>Снижение веса</p>
+    <section class="example">
+
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+
+      <div class="example-block__wrapper">
+        <div class="example-blok__weight">
+          <b class="example-blok__weight-reduction">5 кг</b>
+          <p class="example-blok__weight-description">Снижение веса</p>
+        </div>
+        <div class="example-blok__time">
+          <b class="example-blok__time-day">60 дней</b>
+          <p class="example-blok__time-description">Затрачено времени</p>
+        </div>
+        <p class="example-block__cost">Затраты на питание: 15000 руб.</p>
       </div>
-      <div>
-        <b>60 дней</b>
-        <p>Затрачено времени</p>
-      </div>
-      <p>Затраты на питание: 15000 руб.</p>
 
       <!-- Слайдер с переключателем -->
-      <div>
-        <img src="http://placehold.it/150x100" width="200" height="150" alt="Кот до начала программы">
-        <img src="http://placehold.it/150x100" width="200" height="150" alt="Кот после прохождения программы">
+      <div class="example__slaider">
+        <img class="example__slaider-image" src="http://placehold.it/150x100" width="200" height="150" alt="Кот до начала программы">
+        <img class="example__slaider-image" src="http://placehold.it/150x100" width="200" height="150" alt="Кот после прохождения программы">
       </div>
-
-      <input id="before" type="radio" name="example" value="cat_before">
-      <label class="visyaly-hidden" for="before">Было</label>
-      <input id="after" type="radio" name="example" value="cat_after">
-      <label class="visyaly-hidden" for="after">Стало</label>
+      <div class="slider__switch">
+        <input class="slider__switch-before" id="before" type="radio" name="example" value="cat_before">
+        <label class="visyaly-hidden" for="before">Было</label>
+        <input class="slider__switch-after" id="after" type="radio" name="example" value="cat_after">
+        <label class="visyaly-hidden" for="after">Стало</label>
     </section>
   </main>
 
-<footer>
+  <footer class="main-footer">
 
-  <section>
-    <h2 class="visyaly-hidden">Сотрудничество и наш адрес</h2>
-    <b>Приглашаем к сотрудничеству дилеров!</b>
-    <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="main-footer__date">
+      <h2 class="visyaly-hidden">Сотрудничество и наш адрес</h2>
 
-    <!-- КАРТА -->
-    <img src="http://placehold.it/150x100" width="200" height="150" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-  </section>
+      <div class="main-footer__cooperation">
+        <b class="main-footer__cooperation-invitation">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="main-footer__cooperation-location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
 
-  <img src="" width="100" height="50" alt="Логотип Cat Energy">
-    <!-- CAT ENERGY -->
-    <div>
-      <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
-      </ul>
-    </div>
+      <!-- КАРТА -->
+      <div class="main-footer__map">
+        <img class="main-footer__map-image" src="http://placehold.it/150x100" width="200" height="150" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </div>
+    </section>
 
-    <div>
-      <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </div>
+    <section class="main-footer__about">
+      <div class="main-footer__logo">
+        <img class="main-footer__logo-image logo-image" src="http://placehold.it/150x100" width="100" height="50" alt="Логотип Cat Energy">
+        <!-- CAT ENERGY -->
+      </div>
+
+      <div class="main-footer__social">
+        <ul class="main-footer__social-network">
+
+          <li class="main-footer__social-logo">
+            <a class="main-footer__socia-img--vk" href="#">Вконтакте</a>
+          </li>
+
+          <li class="main-footer__social-logo">
+            <a class="main-footer__social-img--ins" href="#">Instagram</a>
+          </li>
+
+          <li class="main-footer__social-logo">
+            <a class="main-footer__social-img--fb" href="#">Facebook</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="main-footer__developers">
+        <a class="main-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </section>
   </footer>
 
 </body>
+
 </html>

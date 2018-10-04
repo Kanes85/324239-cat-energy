@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=cyrillic" rel="stylesheet">
@@ -7,114 +8,152 @@
   <!-- <link rel="stylesheet" href="style.css"> -->
   <title>Подбор программы Cat Energy</title>
 </head>
+
 <body>
 
   <!-- font-family: 'Oswald', sans-serif; -->
 
-  <header>
+  <header class="page-header">
     <!-- Cat Energy -->
-    <a href="#">
-    <img src="http://placehold.it/150x100" width="100" height="30" alt="Логотип Cat Energy">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image logo-image" src="http://placehold.it/150x100" width="100" height="30" alt="Логотип Cat Energy">
     </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог продукции</a></li>
-        <li><a href="#">Подбор программы</a></li>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list_item">
+          <a class="site-list_item-link" href="#">Главная</a>
+        </li>
+        <li class="site-list_item">
+          <a class="site-list_item-link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list_item">
+          <a class="site-list_item-link site-list__link--active" href="form.html">Подбор программы</a>
+        </li>
       </ul>
     </nav>
   </header>
 
-<main>
-  <section>
-  <h1>Подбор программы</h1>
+  <main class="page-main">
 
-  <p>Заполните анкету и мы подберем программу питания для вашего
-    кота</p>
-  <!-- Форма текстовые поля -->
-<form action="https://echo.htmlacademy.ru" method="get">
-  <p>
-  <label for="">Имя:*</label>
-  <input id="" type="text">
-  </p>
-  <p>
-  <label for="">Вес (кг):*</label>
-  <input id="" type="text">
-  </p>
-  <p>
-  <label for="">Возраст (лет):</label>
-  <input id="" type="text">
-  </p>
+    <section class="program-selection">
+      <h1 class="program-selection-title">Подбор программы</h1>
 
-  <!-- Радиобаттоны -->
-  <label for="">Похудение</label>
-  <input id="" type="radio" name="" value="">
-  <label for="">Набор массы</label>
-  <input id="" type="radio" name="" value="">
-  <label for="">Не знаю (нуэен ваш совет)</label>
-  <input id="" type="radio" name="" value="">
+      <p class="program-selection-task">Заполните анкету и мы подберем программу питания для вашего
+        кота</p>
+      <!-- Форма текстовые поля -->
+      <form class="program-selection__form selection-form" action="https://echo.htmlacademy.ru" method="get">
 
-  <h2>Контактные данные (владельца кота)</h2>
-  <!-- Форма текстовые поля -->
-  <p>
-  <label for="">e-mail:*</label>
-  <input id="" type="email">
-  </p>
-  <p>
-  <label for="">Телефон:*</label>
-  <input id="" type="tel">
-  </p>
+        <fieldset class="selection-form__about about-cat">
+          <legend class="selection-form-title visyaly-hidden">Данные кота</legend>
+          <p>
+            <label class="" for="">Имя:*</label>
+            <input class="" id="" type="text">
+          </p>
+          <p>
+            <label class="" for="">Вес (кг):*</label>
+            <input class="" id="" type="text">
+          </p>
+          <p>
+            <label class="" for="">Возраст (лет):</label>
+            <input class="" id="" type="text">
+          </p>
 
-  <h2>Коментарий</h2>
-  <!-- Текстовое поле текстарея -->
-  <textarea>Расскажите о всех повадках кота</textarea>
+          <!-- Радиобаттоны -->
+          <label for="">Похудение</label>
+          <input class="" id="" type="radio" name="" value="">
+          <label for="">Набор массы</label>
+          <input class="" id="" type="radio" name="" value="">
+          <label for="">Не знаю (нуэен ваш совет)</label>
+          <input class="" id="" type="radio" name="" value="">
+        </fieldset>
 
+        <fieldset class="">
+          <legend class="">Контактные данные (владельца кота)</legend>
+          <!-- Форма текстовые поля -->
+          <p class="">
+            <label for="">e-mail:*</label>
+            <input class="" id="" type="email">
+          </p>
+          <p class="">
+            <label for="">Телефон:*</label>
+            <input class="" id="" type="tel">
+          </p>
+        </fieldset>
 
-  <h2>Дополнительно</h2>
-  <!-- Чекбоксы -->
+        <fieldset class="">
+          <legend class="">Коментарий</legend>
+          <!-- Текстовое поле текстарея -->
+          <textarea class="">Расскажите о всех повадках кота</textarea>
+        </fieldset>
 
-  <label for="">Сахарозаменитель</label>
-  <input id="" type="checkbox" name="" value="">
-  <label for="">Питьевая вода</label>
-  <input id="" type="checkbox" name="" value="">
-  <label for="">Молоко</label>
-  <input id="" type="checkbox" name="" value="">
-  <label for="">Витамины</label>
-  <input id="" type="checkbox" name="" value="">
+        <fieldset class="">
+          <legend class="">Дополнительно</legend>
+          <!-- Чекбоксы -->
+          <label for="">Сахарозаменитель</label>
+          <input class="" id="" type="checkbox" name="" value="">
+          <label for="">Питьевая вода</label>
+          <input class="" id="" type="checkbox" name="" value="">
+          <label for="">Молоко</label>
+          <input class="" id="" type="checkbox" name="" value="">
+          <label for="">Витамины</label>
+          <input class="" id="" type="checkbox" name="" value="">
+        </fieldset>
 
-  <button>Отправить заявку</button>
+        <button class="">Отправить заявку</button>
 
-  <small>* - Обязательные поля</small>
-</form>
-</section>
-</main>
+        <small class="">* - Обязательные поля</small>
+      </form>
+    </section>
 
-<footer>
+  </main>
 
-<section>
-  <h2 class="visyaly-hidden">Сотрудничество и наш адрес</h2>
-  <b>Приглашаем к сотрудничеству дилеров!</b>
-  <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+  <footer class="main-footer">
 
-  <!-- КАРТА -->
-  <img src="http://placehold.it/150x100" width="200" height="150" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-</section>
+    <section class="main-footer__date">
+      <h2 class="visyaly-hidden">Сотрудничество и наш адрес</h2>
 
-  <img src="" width="100" height="50" alt="Логотип Cat Energy">
-  <!-- CAT ENERGY -->
-  <div>
-    <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Facebook</a></li>
-    </ul>
-  </div>
+      <div class="main-footer__cooperation ">
+        <b class="main-footer__cooperation-invitation">Приглашаем к сотрудничеству дилеров!</b>
+        <p class="main-footer__cooperation-location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
 
-  <div>
-    <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-  </div>
-</footer>
+      <!-- КАРТА -->
+      <div class="main-footer__map">
+        <img class="main-footer__map-image" src="http://placehold.it/150x100" width="200" height="150" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </div>
+    </section>
+
+    <section class="main-footer__about">
+      <div class="main-footer__logo">
+        <img class="main-footer__logo-image logo-image" src="http://placehold.it/150x100" width="100" height="50" alt="Логотип Cat Energy">
+        <!-- CAT ENERGY -->
+      </div>
+
+      <div class="main-footer__social">
+        <ul class="main-footer__social-network">
+
+          <li class="main-footer__social-logo">
+            <a class="main-footer__socia-img--vk" href="#">Вконтакте</a>
+          </li>
+
+          <li class="main-footer__social-logo">
+            <a class="main-footer__social-img--ins" href="#">Instagram</a>
+          </li>
+
+          <li class="main-footer__social-logo">
+            <a class="main-footer__social-img--fb" href="#">Facebook</a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="main-footer__developers">
+        <a class="main-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </section>
+  </footer>
 
 
 </body>
+
 </html>
