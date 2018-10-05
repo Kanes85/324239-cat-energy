@@ -47,23 +47,23 @@
           <legend class="selection-form-title visyaly-hidden">Данные кота</legend>
           <p>
             <label class="about-cat__name-label" for="name-cat">Имя:*</label>
-            <input class="about-cat__name" id="name-cat" type="text">
+            <input class="about-cat__name" id="name-cat" name="cat-name" type="text">
           </p>
           <p>
             <label class="about-cat__weight-label" for="weight-cat">Вес (кг):*</label>
-            <input class="about-cat__weight" id="weight-cat" type="text">
+            <input class="about-cat__weight" id="weight-cat" name="cat-weight" type="text">
           </p>
           <p>
             <label class="about-cat__age-label" for="age-cat">Возраст (лет):</label>
-            <input class="about-cat__age" id="age-cat" type="text">
+            <input class="about-cat__age" id="age-cat" name="cat-age" type="text">
           </p>
 
           <!-- Радиобаттоны -->
-          <input class="about-cat__target" id="slim-cat" type="radio" name="about-cat" value="slim">
+          <input class="about-cat__target" id="slim-cat" type="radio" name="target-cat" value="slim">
           <label class="about-cat__target-label" for="slim-cat">Похудение</label>
-          <input class="about-cat__target" id="mass-cat" type="radio" name="about-cat" value="mass">
+          <input class="about-cat__target" id="mass-cat" type="radio" name="target-cat" value="mass">
           <label class="about-cat__target-label" for="mass-cat">Набор массы</label>
-          <input class="about-cat__target" id="need-recommendation" type="radio" name="about-cat" value="recommendation">
+          <input class="about-cat__target" id="need-recommendation" type="radio" name="target-cat" value="recommendation">
           <label class="about-cat__target-label" for="need-recommendation">Не знаю (нужен ваш совет)</label>
         </fieldset>
 
@@ -72,30 +72,30 @@
           <!-- Форма текстовые поля -->
           <p>
             <label class="contacts-owner__email-label" for="email-owner">e-mail:*</label>
-            <input class="contacts-owner__email" id="email-owner" type="email">
+            <input class="contacts-owner__email" id="email-owner" name="e-mail" type="email">
           </p>
           <p>
             <label class="contacts-owner__phone-label" for="tel-owner">Телефон:*</label>
-            <input class="contacts-owner__phone" id="tel-owner" type="tel">
+            <input class="contacts-owner__phone" id="tel-owner" name="phone-number" type="tel">
           </p>
         </fieldset>
 
         <fieldset class="selection-form__comments comments">
           <legend class="selection-form-title comments__title">Коментарий</legend>
           <!-- Текстовое поле textarea -->
-          <textarea class="comments__box">Расскажите о всех повадках кота</textarea>
+          <textarea class="comments__box" name="comments">Расскажите о всех повадках кота</textarea>
         </fieldset>
 
         <fieldset class="selection-form__additionally additionally">
           <legend class="selection-form-title additionally__title">Дополнительно</legend>
           <!-- Чекбоксы -->
-          <input class="additionally__target" id="additionally-sugar" type="checkbox" name="additionally-sugar" value="sugar-substitute">
+          <input class="additionally__target" id="additionally-sugar" type="checkbox" name="additionally" value="sugar-substitute">
           <label class="additionally__target-label" for="additionally-sugar">Сахарозаменитель</label>
-          <input class="additionally__target" id="additionally-water" type="checkbox" name="additionally-water" value="drinking-water">
+          <input class="additionally__target" id="additionally-water" type="checkbox" name="additionally" value="drinking-water">
           <label class="additionally__target-label" for="additionally-water">Питьевая вода</label>
-          <input class="additionally__target" id="additionally-milk" type="checkbox" name="additionally-milk" value="milk">
+          <input class="additionally__target" id="additionally-milk" type="checkbox" name="additionally" value="milk">
           <label class="additionally__target-label" for="additionally-milk">Молоко</label>
-          <input class="additionally__target" id="additionally-vitamins" type="checkbox" name="additionally-vitamins" value="vitamins">
+          <input class="additionally__target" id="additionally-vitamins" type="checkbox" name="additionally" value="vitamins">
           <label class="additionally__target-label" for="additionally-vitamins">Витамины</label>
         </fieldset>
 
