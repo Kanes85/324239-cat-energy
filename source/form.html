@@ -3,9 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="../normalize.css">
-  <!-- <link rel="stylesheet" href="style.css"> -->
   <title>Подбор программы Cat Energy</title>
 </head>
 
@@ -20,14 +17,14 @@
     </a>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li class="site-list_item">
-          <a class="site-list_item-link" href="#">Главная</a>
+        <li class="site-list__item">
+          <a class="site-list__item-link" href="#">Главная</a>
         </li>
-        <li class="site-list_item">
-          <a class="site-list_item-link" href="catalog.html">Каталог продукции</a>
+        <li class="site-list__item">
+          <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list_item">
-          <a class="site-list_item-link site-list__link--active" href="form.html">Подбор программы</a>
+        <li class="site-list__item">
+          <a class="site-list__item-link site-list__item-link--active" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -36,71 +33,73 @@
   <main class="page-main">
 
     <section class="program-selection">
-      <h1 class="program-selection-title">Подбор программы</h1>
+      <h1 class="program-selection__title">Подбор программы</h1>
 
-      <p class="program-selection-task">Заполните анкету и мы подберем программу питания для вашего
+      <p class="program-selection__task">Заполните анкету и мы подберем программу питания для вашего
         кота</p>
       <!-- Форма текстовые поля -->
       <form class="program-selection__form selection-form" action="https://echo.htmlacademy.ru" method="get">
 
-        <fieldset class="selection-form__about about-cat">
-          <legend class="selection-form-title visyaly-hidden">Данные кота</legend>
+        <fieldset class="selection-form__group-field about-cat">
+          <legend class="selection-form__title visyaly-hidden">Данные кота</legend>
           <p>
-            <label class="about-cat__name-label" for="name-cat">Имя:*</label>
-            <input class="about-cat__name" id="name-cat" name="cat-name" type="text">
+            <label class="about-cat__data-label" for="name-cat">Имя:*</label>
+            <input class="about-cat__data" id="name-cat" name="cat-name" type="text">
           </p>
           <p>
-            <label class="about-cat__weight-label" for="weight-cat">Вес (кг):*</label>
-            <input class="about-cat__weight" id="weight-cat" name="cat-weight" type="text">
+            <label class="about-cat__data-label" for="weight-cat">Вес (кг):*</label>
+            <input class="about-cat__data" id="weight-cat" name="cat-weight" type="text">
           </p>
           <p>
-            <label class="about-cat__age-label" for="age-cat">Возраст (лет):</label>
-            <input class="about-cat__age" id="age-cat" name="cat-age" type="text">
+            <label class="about-cat__data-label" for="age-cat">Возраст (лет):</label>
+            <input class="about-cat__data" id="age-cat" name="cat-age" type="text">
           </p>
+          </fieldset>
 
+          <fieldset class="selection-form__target-selection target-selection">
+            <legend class="selection-form__title visyaly-hidden">Выбор цели программы</legend>
           <!-- Радиобаттоны -->
-          <input class="about-cat__target" id="slim-cat" type="radio" name="target-cat" value="slim">
-          <label class="about-cat__target-label" for="slim-cat">Похудение</label>
-          <input class="about-cat__target" id="mass-cat" type="radio" name="target-cat" value="mass">
-          <label class="about-cat__target-label" for="mass-cat">Набор массы</label>
-          <input class="about-cat__target" id="need-recommendation" type="radio" name="target-cat" value="recommendation">
-          <label class="about-cat__target-label" for="need-recommendation">Не знаю (нужен ваш совет)</label>
-        </fieldset>
+            <input class="target-selection__target" id="slim-cat" type="radio" name="target-cat" value="slim">
+            <label class="target-selection__target-label" for="slim-cat">Похудение</label>
+            <input class="target-selection__target" id="mass-cat" type="radio" name="target-cat" value="mass">
+            <label class="target-selection__target-label" for="mass-cat">Набор массы</label>
+            <input class="target-selection__target" id="need-recommendation" type="radio" name="target-cat" value="recommendation">
+            <label class="target-selection__target-label" for="need-recommendation">Не знаю (нужен ваш совет)</label>
+          </fieldset>
 
-        <fieldset class="selection-form__contacts-owner contacts-owner">
-          <legend class="selection-form-title contacts-owner__title">Контактные данные (владельца кота)</legend>
+        <fieldset class="selection-form__contacts-data contacts-data">
+          <legend class="selection-form__title contacts-data__title">Контактные данные (владельца кота)</legend>
           <!-- Форма текстовые поля -->
           <p>
-            <label class="contacts-owner__email-label" for="email-owner">e-mail:*</label>
-            <input class="contacts-owner__email" id="email-owner" name="e-mail" type="email">
+            <label class="contacts-data__email-label" for="email-owner">e-mail:*</label>
+            <input class="contacts-data__field contacts-data__field--mail" id="email-owner" type="email" name="e-mail">
           </p>
           <p>
-            <label class="contacts-owner__phone-label" for="tel-owner">Телефон:*</label>
-            <input class="contacts-owner__phone" id="tel-owner" name="phone-number" type="tel">
+            <label class="contacts-data__phone-label" for="tel-owner">Телефон:*</label>
+            <input class="contacts-data__field contacts-data__field--phone" id="tel-owner" type="tel" name="phone-number">
           </p>
         </fieldset>
 
-        <fieldset class="selection-form__comments comments">
-          <legend class="selection-form-title comments__title">Коментарий</legend>
+        <fieldset class="selection-form__order-comments order-comments">
+          <legend class="selection-form__title order-comments__title">Коментарий</legend>
           <!-- Текстовое поле textarea -->
-          <textarea class="comments__box" name="comments">Расскажите о всех повадках кота</textarea>
+          <textarea class="order-comments__box" name="comments" placeholder="Расскажите о всех повадках кота"></textarea>
         </fieldset>
 
-        <fieldset class="selection-form__additionally additionally">
-          <legend class="selection-form-title additionally__title">Дополнительно</legend>
+        <fieldset class="selection-form__additional-goods additional-goods">
+          <legend class="selection-form__title additional-goods__title">Дополнительно</legend>
           <!-- Чекбоксы -->
-          <input class="additionally__target" id="additionally-sugar" type="checkbox" name="additionally" value="sugar-substitute">
-          <label class="additionally__target-label" for="additionally-sugar">Сахарозаменитель</label>
-          <input class="additionally__target" id="additionally-water" type="checkbox" name="additionally" value="drinking-water">
-          <label class="additionally__target-label" for="additionally-water">Питьевая вода</label>
-          <input class="additionally__target" id="additionally-milk" type="checkbox" name="additionally" value="milk">
-          <label class="additionally__target-label" for="additionally-milk">Молоко</label>
-          <input class="additionally__target" id="additionally-vitamins" type="checkbox" name="additionally" value="vitamins">
-          <label class="additionally__target-label" for="additionally-vitamins">Витамины</label>
+          <input class="additional-goods__target" id="additionally-sugar" type="checkbox" name="additionally" value="sugar-substitute">
+          <label class="additional-goods__target-label" for="additionally-sugar">Сахарозаменитель</label>
+          <input class="additional-goods__target" id="additionally-water" type="checkbox" name="additionally" value="drinking-water">
+          <label class="additional-goods__target-label" for="additionally-water">Питьевая вода</label>
+          <input class="additional-goods__target" id="additionally-milk" type="checkbox" name="additionally" value="milk">
+          <label class="additional-goods__target-label" for="additionally-milk">Молоко</label>
+          <input class="additional-goods__target" id="additionally-vitamins" type="checkbox" name="additionally" value="vitamins">
+          <label class="additional-goods__target-label" for="additionally-vitamins">Витамины</label>
         </fieldset>
 
-        <button type="submit" class="button selection-form__button">Отправить заявку</button>
-        <!-- <input type="submit" value="Отправить заявку"> -->
+        <button type="submit" type="submit" class="button selection-form__button">Отправить заявку</button>
 
         <small class="selection-form__important-information">* - Обязательные поля</small>
       </form>
@@ -111,7 +110,7 @@
   <footer class="main-footer">
 
     <section class="main-footer__date">
-      <h2 class="visyaly-hidden">Сотрудничество и наш адрес</h2>
+      <h2 class="visually-hidden">Сотрудничество и наш адрес</h2>
 
       <div class="main-footer__cooperation ">
         <b class="main-footer__cooperation-invitation">Приглашаем к сотрудничеству дилеров!</b>
@@ -125,7 +124,7 @@
     </section>
 
     <section class="main-footer__about">
-      <h2 class="visyaly-hidden">Социальные сети и разработчик</h2>
+      <h2 class="visually-hidden">Социальные сети и разработчик</h2>
       <div class="main-footer__logo">
         <img class="main-footer__logo-image logo-image" src="http://placehold.it/150x100" width="100" height="50" alt="Логотип Cat Energy">
         <!-- CAT ENERGY -->
@@ -135,15 +134,15 @@
         <ul class="main-footer__social-network">
 
           <li class="main-footer__social-logo">
-            <a class="main-footer__socia-img--vk" href="#">Вконтакте</a>
+            <a class="main-footer__socia-img main-footer__socia-img--vk" href="#">Вконтакте</a>
           </li>
 
           <li class="main-footer__social-logo">
-            <a class="main-footer__social-img--ins" href="#">Instagram</a>
+            <a class="main-footer__social-img main-footer__social-img--ins" href="#">Instagram</a>
           </li>
 
           <li class="main-footer__social-logo">
-            <a class="main-footer__social-img--fb" href="#">Facebook</a>
+            <a class="main-footer__social-img main-footer__social-img--fb" href="#">Facebook</a>
           </li>
 
         </ul>
