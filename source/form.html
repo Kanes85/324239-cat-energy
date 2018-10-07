@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Подбор программы Cat Energy</title>
 </head>
 
@@ -71,19 +71,19 @@
           <legend class="selection-form__title contacts-data__title">Контактные данные (владельца кота)</legend>
           <!-- Форма текстовые поля -->
           <p>
-            <label class="contacts-data__email-label" for="email-owner">e-mail:*</label>
+            <label class="contacts-data__field-label" for="email-owner">e-mail:*</label>
             <input class="contacts-data__field contacts-data__field--mail" id="email-owner" type="email" name="e-mail">
           </p>
           <p>
-            <label class="contacts-data__phone-label" for="tel-owner">Телефон:*</label>
+            <label class="contacts-data__field-label" for="tel-owner">Телефон:*</label>
             <input class="contacts-data__field contacts-data__field--phone" id="tel-owner" type="tel" name="phone-number">
           </p>
         </fieldset>
 
-        <fieldset class="selection-form__order-comments order-comments">
-          <legend class="selection-form__title order-comments__title">Коментарий</legend>
+        <fieldset class="selection-form__text-box text-box">
+          <legend class="selection-form__title text-box__title">Коментарий</legend>
           <!-- Текстовое поле textarea -->
-          <textarea class="order-comments__box" name="comments" placeholder="Расскажите о всех повадках кота"></textarea>
+          <textarea class="text-box__textarea-box" name="comments" placeholder="Расскажите о всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="selection-form__additional-goods additional-goods">
@@ -99,7 +99,7 @@
           <label class="additional-goods__target-label" for="additionally-vitamins">Витамины</label>
         </fieldset>
 
-        <button type="submit" type="submit" class="button selection-form__button">Отправить заявку</button>
+        <button type="submit" class="button selection-form__button">Отправить заявку</button>
 
         <small class="selection-form__important-information">* - Обязательные поля</small>
       </form>
