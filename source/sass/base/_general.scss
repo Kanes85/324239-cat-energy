@@ -1,0 +1,12 @@
+.button {
+  @include font-regular;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68b738;
+  padding: 10px;
+  text-align: center;
+}

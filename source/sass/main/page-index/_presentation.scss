@@ -1,0 +1,43 @@
+.presentation {
+  width: 320px;
+  background-image: url("../../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 320px 305px;
+}
+
+.presentation::after {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 270px;
+  background-image: url("../../../img/index-can-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
+.presentation__title {
+  @include font-regular;
+  display: inline-block;
+  width: 265px;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 29px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.presentation__description {
+  @include font-regular;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 60px;
+}
+
+.presentation__button {
+  padding: 10px 20px;
+}

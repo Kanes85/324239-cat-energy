@@ -1,0 +1,14 @@
+@mixin font-medium {
+  font-family: "OswaldMedium", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+@mixin font-regular {
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+@mixin link {
+  text-decoration: none;
+  color: #000000;
+}
