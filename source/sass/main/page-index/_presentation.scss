@@ -1,9 +1,12 @@
 .presentation {
+  position: relative;
   width: 320px;
-  background-image: url("../../../img/index-background-mobile@1x.jpg");
+  background-color: #63a73a;
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 320px 305px;
+  max-height: 305px;
+  margin-bottom: 210px;
 }
 
 .presentation::after {
@@ -11,7 +14,7 @@
   display: block;
   width: 280px;
   height: 270px;
-  background-image: url("../../../img/index-can-mobile@1x.png");
+  background-image: url("../img/index-can-mobile@1x.png");
   background-repeat: no-repeat;
 }
 
@@ -36,8 +39,12 @@
   text-transform: uppercase;
   margin: 0;
   margin-left: 60px;
+  margin-bottom: 35px;
 }
 
 .presentation__button {
-  padding: 10px 20px;
+  position: absolute;
+  left: 15px;
+  bottom: -185px;
+  padding: 10px 74px;
 }

@@ -6,8 +6,8 @@
 
 @font-face {
   font-family: "OswaldRegular";
-  src: url("../../fonts/oswaldregular.woff") format("woff");
-  src: url("../../fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 .main-nav {
-  @include font-regular;
+  @include font-medium;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
