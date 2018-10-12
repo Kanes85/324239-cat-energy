@@ -11,8 +11,9 @@
 }
 
 body {
-  @include font-regular;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
+  line-height: 18px;
   color: #000000;
 }
 
