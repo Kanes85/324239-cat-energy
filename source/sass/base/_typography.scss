@@ -23,3 +23,9 @@ body {
   line-height: 20px;
   text-transform: uppercase;
 }
+
+.lead-titles {
+  @include font-regular;
+  font-size: 36px;
+  line-height: 60px;
+}

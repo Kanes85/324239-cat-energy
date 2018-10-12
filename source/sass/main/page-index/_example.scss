@@ -1,0 +1,97 @@
+.example {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
+  background-color: $background-color;
+  border-bottom: 1px solid transparent;
+}
+
+.example__description {
+  padding-right: 2px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.example-block__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      -webkit-box-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.example-blok__date {
+  @include font-regular;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+.example-blok__weight,
+.example-blok__time {
+  position: relative;
+}
+
+.example-blok__weight-reduction {
+  padding-top: 10px;
+  padding-right: 41px;
+  padding-bottom: 10px;
+  padding-left: 41px;
+}
+
+.example-blok__weight-description {
+  position: absolute;
+  left: 15px;
+  bottom: -50px;
+  width: 90px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.example-blok__time-day {
+  padding: 10px 20px 10px 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.example-blok__time-description {
+  position: absolute;
+  left: 15px;
+  bottom: -50px;
+  width: 90px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.example-block__cost {
+  @include font-regular;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.slider__switch-label {
+  @include font-regular;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__slaider {
+  margin-bottom: 20px;
+}
+
+.slider__switch {
+  margin-bottom: 20px;
+}

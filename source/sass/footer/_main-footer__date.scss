@@ -1,0 +1,34 @@
+.main-footer__date {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-footer__cooperation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.main-footer__cooperation-invitation {
+  @include font-regular;
+  width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.main-footer__cooperation-location {
+  width: 140px;
+  line-height: 20px;
+  margin: 0;
+}
