@@ -14,8 +14,27 @@
   @include font-regular;
   text-transform: uppercase;
   width: 226px;
+  margin-bottom: 20px;
 }
 
-. {
+.selection-label {
   border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.select__form-label {
+  @include font-regular;
+  @include label;
+  padding-right: 10px;
+}
+
+.about-cat__data,
+.contacts-data__field {
+  display: inline-block;
+  margin-right: 0;
+  border: 1px solid #cdcdcd;
+  padding: 10px;
+  padding-left: 10px;
+  max-width: 220px;
 }

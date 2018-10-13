@@ -12,3 +12,10 @@
   text-decoration: none;
   color: #000000;
 }
+
+@mixin label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+}
