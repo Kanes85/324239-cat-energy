@@ -43,31 +43,31 @@
           <legend class="selection-form__title visually-hidden">Данные кота</legend>
           <p>
             <label class="about-cat__data-label select__form-label" for="name-cat">Имя:*</label>
-            <input class="about-cat__data" id="name-cat" name="cat-name" type="text">
+            <input class="about-cat__data about-cat__data--name" id="name-cat" name="cat-name" type="text" required>
           </p>
           <p>
             <label class="about-cat__data-label select__form-label" for="weight-cat">Вес (кг):*</label>
-            <input class="about-cat__data" id="weight-cat" name="cat-weight" type="text">
+            <input class="about-cat__data about-cat__data--weight" id="weight-cat" name="cat-weight" type="text" required>
           </p>
           <p>
             <label class="about-cat__data-label select__form-label" for="age-cat">Возраст (лет):</label>
-            <input class="about-cat__data" id="age-cat" name="cat-age" type="text">
+            <input class="about-cat__data about-cat__data--age" id="age-cat" name="cat-age" type="text">
           </p>
           </fieldset>
 
           <fieldset class="selection-form__target-selection target-selection selection-label">
             <legend class="selection-form__title visually-hidden">Выбор цели программы</legend>
           <!-- Радиобаттоны -->
-          <p>
-            <input class="target-selection__target" id="slim-cat" type="radio" name="target-cat" value="slim">
+          <p class="target-selection__block-input">
+            <input class="target-selection__target visually-hidden" id="slim-cat" type="radio" name="target-cat" value="slim" checked>
             <label class="target-selection__target-label select__form-label" for="slim-cat">Похудение</label>
           </p>
-          <p>
-            <input class="target-selection__target" id="mass-cat" type="radio" name="target-cat" value="mass">
+          <p class="target-selection__block-input">
+            <input class="target-selection__target visually-hidden" id="mass-cat" type="radio" name="target-cat" value="mass">
             <label class="target-selection__target-label select__form-label" for="mass-cat">Набор массы</label>
           </p>
-          <p>
-            <input class="target-selection__target" id="need-recommendation" type="radio" name="target-cat" value="recommendation">
+          <p class="target-selection__block-input">
+            <input class="target-selection__target visually-hidden" id="need-recommendation" type="radio" name="target-cat" value="recommendation">
             <label class="target-selection__target-label select__form-label" for="need-recommendation">Не знаю (нужен ваш совет)</label>
           </p>
           </fieldset>
@@ -77,11 +77,11 @@
           <!-- Форма текстовые поля -->
           <p>
             <label class="contacts-data__field-label select__form-label" for="email-owner">e-mail:*</label>
-            <input class="contacts-data__field contacts-data__field--mail" id="email-owner" type="email" name="e-mail">
+            <input class="contacts-data__field contacts-data__field--mail" id="email-owner" type="email" name="e-mail" required>
           </p>
           <p>
             <label class="contacts-data__field-label select__form-label" for="tel-owner">Телефон:*</label>
-            <input class="contacts-data__field contacts-data__field--phone" id="tel-owner" type="tel" name="phone-number">
+            <input class="contacts-data__field contacts-data__field--phone" id="tel-owner" type="tel" name="phone-number" required>
           </p>
         </fieldset>
 

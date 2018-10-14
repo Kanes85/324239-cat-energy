@@ -17,6 +17,12 @@
   margin-bottom: 20px;
 }
 
+.selection-form__title {
+  @include font-regular;
+  font-size: 24px;
+  line-height: 24px;
+}
+
 .selection-label {
   border: none;
   padding: 0;
@@ -31,10 +37,73 @@
 
 .about-cat__data,
 .contacts-data__field {
-  display: inline-block;
-  margin-right: 0;
+  @include font-regular;
+  @include label;
+  text-transform: uppercase;
   border: 1px solid #cdcdcd;
   padding: 10px;
   padding-left: 10px;
-  max-width: 220px;
 }
+
+.about-cat__data--name {
+  width: 206px;
+}
+
+
+.about-cat__data--weight {
+  width: 184px;
+}
+
+.about-cat__data--age {
+  width: 151px;
+}
+
+.target-selection__target-label {
+  position: relative;
+  padding-left: 46px;
+}
+
+.target-selection__target-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.target-selection__block-input {
+  margin-bottom: 25px;
+}
+
+.target-selection__target:checked + .target-selection__target-label::before {
+  background-color: $main_color;
+  box-shadow: inset 0 0 0 8px #ffffff;
+}
+
+.contacts-data__field--mail {
+  width: 194px;
+}
+
+.contacts-data__field--phone {
+  width: 177px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// END
