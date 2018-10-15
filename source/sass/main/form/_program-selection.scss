@@ -19,14 +19,26 @@
 
 .selection-form__title {
   @include font-regular;
+  position: relative;
   font-size: 24px;
   line-height: 24px;
+  margin-bottom: 30px;
 }
 
 .selection-label {
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.about-cat,
+.target-selection {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+
+.about-cat__paragraph:last-child {
+  margin-bottom: 25px;
 }
 
 .select__form-label {
@@ -39,7 +51,6 @@
 .contacts-data__field {
   @include font-regular;
   @include label;
-  text-transform: uppercase;
   border: 1px solid #cdcdcd;
   padding: 10px;
   padding-left: 10px;
@@ -78,21 +89,132 @@
   margin-bottom: 25px;
 }
 
+.target-selection__block-input:last-child {
+  margin-bottom: 25px;
+}
+
+.contacts-data__paragraph {
+  margin-top: 0;
+}
+
 .target-selection__target:checked + .target-selection__target-label::before {
   background-color: $main_color;
   box-shadow: inset 0 0 0 8px #ffffff;
 }
 
 .contacts-data__field--mail {
-  width: 194px;
+  width: 216px;
+  box-sizing: border-box;
+  padding-right: 40px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-size: 17px 13px;
+  background-position: 185px;
 }
 
 .contacts-data__field--phone {
-  width: 177px;
+  width: 199px;
+  box-sizing: border-box;
+  padding-right: 40px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 167px;
 }
 
+.text-box__textarea-box {
+  width: 278px;
+  height: 150px;
+  @include font-regular;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
+.text-box__textarea-box::placeholder {
+  @include font-regular;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  box-sizing: border-box;
+}
 
+.text-box {
+  margin-bottom: 20px;
+}
+
+.additional-goods__paragraph {
+  margin-bottom: 30px;
+}
+
+.additional-goods__target-label {
+  position: relative;
+  padding-left: 47px;
+}
+
+.additional-goods__target-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+.additional-goods__target:checked + .additional-goods__target-label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+.selection-form__button {
+  padding: 10px 86px;
+  margin-bottom: 20px;
+}
+
+.selection-form__important-information {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  width: 280px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts-data__title::after,
+.text-box__title::after,
+.additional-goods__title::after {
+  content: "";
+  position: absolute;
+  background-color: $main_color;
+}
+
+.contacts-data__title::after {
+  right: -20px;
+  top: 13px;
+  width: 99px;
+  height: 3px;
+}
+
+.text-box__title::after {
+  right: -190px;
+  top: 13px;
+  width: 158px;
+  height: 3px;
+}
+
+.additional-goods__title::after {
+  right: -158px;
+  top: 13px;
+  width: 136px;
+  height: 3px;
+}
 
 
 
