@@ -186,27 +186,25 @@
   content: "";
   position: absolute;
   background-color: $main_color;
+  height: 3px;
 }
 
 .contacts-data__title::after {
   right: -20px;
   top: 13px;
   width: 99px;
-  height: 3px;
 }
 
 .text-box__title::after {
   right: -190px;
   top: 13px;
   width: 158px;
-  height: 3px;
 }
 
 .additional-goods__title::after {
   right: -158px;
   top: 13px;
   width: 136px;
-  height: 3px;
 }
 
 

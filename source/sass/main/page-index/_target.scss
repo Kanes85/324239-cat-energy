@@ -74,14 +74,11 @@
   padding-right: 40px;
 }
 
-.target__button::after {
-  content: "";
+.target__right-arrow {
   position: absolute;
-  left: 100px;
+  left: 90px;
   bottom: 3px;
   width: 24px;
   height: 11px;
-  background-image: url("../img/icon-right-arrow-long.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  padding-left: 10px;
 }

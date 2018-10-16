@@ -3,7 +3,6 @@
 @import "helpers/mixins";
 @import "base/typography";
 @import "base/general";
-@import "header/page-header";
 @import "header/main-nav";
 @import "main/page-index/presentation";
 @import "main/page-index/target";
@@ -11,9 +10,9 @@
 @import "main/page-index/example";
 @import "main/form/program-selection";
 @import "main/catalog/product-catalog";
-// @import "";
-// @import "";
-// @import "";
+@import "main/catalog/show-more";
+@import "main/catalog/additional-goods";
+@import "main/catalog/special-offer";
 // @import "";
 // @import "";
 // @import "";

@@ -17,5 +17,15 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
 
+@mixin big-btn {
+  width: 280px;
+  box-sizing: border-box;
+}
+
+@mixin width {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
 }

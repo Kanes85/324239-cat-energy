@@ -1,7 +1,17 @@
+.page-header {
+  position: relative;
+}
+
+.page-header__logo {
+  display: block;
+  padding: 10px;
+  padding-left: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .main-nav__list {
   list-style: none;
   margin: 0;
-  margin-bottom: 15px;
   padding: 0;
 }
 
@@ -13,4 +23,32 @@
   padding: 20px 0;
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
+}
+
+// Кнопка "гамбургер" для открытия меню
+.page-header__hamburger {
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 18px;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// Крест закрывающий меню
+.page-header__close {
+position: absolute;
+right: 20px;
+top: 23px;
+border: none;
+background-color: transparent;
+width: 18px;
+height: 18px;
+background-image: url("../img/icon-close.svg");
+background-repeat: no-repeat;
+background-position: center;
 }
