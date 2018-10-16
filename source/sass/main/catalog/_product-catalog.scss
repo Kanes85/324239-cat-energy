@@ -1,0 +1,33 @@
+.product-catalog__wrapper {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+.page-main__title--border {
+  padding-bottom: 25px;
+  border-bottom: 1px solid $background-color;
+}
+
+.product-catalog__image {
+  float: left;
+  clear: both;
+}
+
+.product-catalog__title {
+  @include font-regular;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+
+.product-catalog__title {
+  width: 240px;
+}
+
+.product-catalog__button {
+  margin-left: 20px;
+  width: 280px;
+  box-sizing:  border-box;
+}
