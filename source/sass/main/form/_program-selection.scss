@@ -3,13 +3,6 @@
   margin: 0 auto;
 }
 
-.program-selection__title {
-  @include font-regular;
-  font-size: 36px;
-  line-height: 60px;
-  margin: 0;
-}
-
 .program-selection__task {
   @include font-regular;
   text-transform: uppercase;
