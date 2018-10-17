@@ -2,7 +2,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 11px;
+  margin-bottom: 1px;
   background-color: $background-color;
   border-bottom: 1px solid transparent;
 }
@@ -10,14 +10,14 @@
 .example__title {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 25px;
-  padding-top: 15px;
+  margin-bottom: 24px;
+  padding-top: 16px;
 }
 
 .example__description {
   width: 279px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .example-block__wrapper {
@@ -44,7 +44,7 @@
 
 .example-blok__weight-reduction {
   padding-top: 8px;
-  padding-right: 45px;
+  padding-right: 43px;
   padding-bottom: 10px;
   padding-left: 41px;
 }
@@ -53,8 +53,8 @@
   font-size: 12px;
   line-height: 12px;
   position: absolute;
-  left: 20px;
-  bottom: -40px;
+  left: 21px;
+  bottom: -42px;
   width: 80px;
   text-transform: lowercase;
   text-align: center;
@@ -73,8 +73,8 @@
   font-size: 12px;
   line-height: 12px;
   position: absolute;
-  left: 15px;
-  bottom: -40px;
+  left: 16px;
+  bottom: -42px;
   width: 90px;
   text-transform: lowercase;
   text-align: center;
@@ -89,18 +89,12 @@
   text-align: center;
 }
 
+// Слайдер
 .example__slaider {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   position: relative;
 }
 
-// .slider__switch {
-//   width: 200px;
-//   margin: 0 auto;
-//   margin-bottom: 20px;
-// }
-
-// Слайдер
 .example__slaider-wrapper {
   position: relative;
   width: 280px;
@@ -130,7 +124,7 @@
   line-height: 20px;
   text-transform: uppercase;
   position: absolute;
-  bottom: 12px;
+  bottom: 11px;
   z-index: 50;
 }
 

@@ -16,19 +16,13 @@
   position: relative;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
 }
 
 .selection-label {
   border: none;
   padding: 0;
   margin: 0;
-}
-
-.about-cat,
-.target-selection {
-  // border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 0;
 }
 
 .about-cat__paragraph{
@@ -49,7 +43,7 @@
   @include font-regular;
   @include label;
   border: 1px solid #cdcdcd;
-  padding-left: 15px;
+  padding-left: 14px;
   box-sizing: border-box;
   margin-bottom: 2px;
   padding-top: 10px;
@@ -68,6 +62,14 @@
   width: 173px;
 }
 
+.selection-form__contacts-data {
+  margin-bottom: 11px;
+}
+
+.contacts-data__field-label {
+  padding-right: 7px;
+}
+
 .target-selection__target-label {
   position: relative;
   padding-left: 46px;
@@ -75,10 +77,11 @@
 
 .selection-form__target-selection {
   border: $border;
-  padding-top: 23px;
+  padding-top: 22px;
   width: 320px;
+  box-sizing: border-box;
   margin-left: -20px;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
 }
 
 .target-selection__target-label::before {
@@ -96,10 +99,9 @@
   margin: 0 auto;
   margin-bottom: 25px;
   width: 280px;
-}
-
-.target-selection__block-input:last-child {
-  margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 22px;
+    }
 }
 
 .contacts-data__paragraph {
@@ -113,7 +115,7 @@
 }
 
 .contacts-data__field--mail {
-  width: 216px;
+  width: 219px;
   box-sizing: border-box;
   padding-right: 40px;
 }
@@ -121,30 +123,31 @@
 .contacts-data__field--mail-icon {
   position:  absolute;
   right: 15px;
-  top: 13px;
+  top: 15px;
 }
 
 .contacts-data__field--phone {
-  width: 199px;
+  width: 202px;
   box-sizing: border-box;
   padding-right: 40px;
 }
 
 .contacts-data__field--phone-icon {
   position:  absolute;
-  right: 15px;
+  right: 13px;
   top: 10px;
 }
 
 .text-box__textarea-box {
-  width: 278px;
+  width: 280px;
   height: 150px;
   @include font-regular;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  padding: 10px;
+  padding-left: 13px;
+  padding-top: 11px;
   box-sizing: border-box;
 }
 
@@ -158,11 +161,15 @@
 }
 
 .text-box {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .additional__paragraph {
-  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 22px;
+    &:last-child {
+      margin-bottom: 39px;
+    }
 }
 
 .additional__target-label {
@@ -174,9 +181,9 @@
   content: "";
   position: absolute;
   left: 0;
-  top: -5px;
-  width: 30px;
-  height: 30px;
+  top: -3px;
+  width: 28px;
+  height: 28px;
   border: 1px solid #cdcdcd;
 }
 
@@ -188,8 +195,13 @@
 }
 
 .selection-form__button {
-  padding: 10px 86px;
+  // padding-bottom: 10px;
+  // padding-top: 11px;
   margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 280px;
+  box-sizing: border-box;
 }
 
 .selection-form__important-information {
@@ -198,7 +210,7 @@
   line-height: 16px;
   width: 280px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .contacts-data__title::after,
@@ -212,18 +224,18 @@
 
 .contacts-data__title::after {
   right: -20px;
-  top: 13px;
+  top: 15px;
   width: 99px;
 }
 
 .text-box__title::after {
-  right: -192px;
+  right: -180px;
   top: 14px;
   width: 158px;
 }
 
 .additional__title::after {
-  right: -158px;
-  top: 13px;
+  right: -160px;
+  top: 14px;
   width: 136px;
 }
