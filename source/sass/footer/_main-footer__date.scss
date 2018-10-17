@@ -46,6 +46,14 @@
   padding: 0;
 }
 
+.main-footer__map-image {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // z-index: 5;
+}
+
+
 .main-footer__map::before {
   content: "";
   position: absolute;
@@ -57,4 +65,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 55px;
+  // z-index: 15;
+}
+
+
+
+.main-footer__map-live {
+  position: relative;
+  z-index: 50;
 }

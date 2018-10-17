@@ -17,17 +17,6 @@
   text-align: center;
 }
 
-.show-more__view::before {
-  content: "";
-  position: absolute;
-  left: 140px;
-  top: 30px;
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/icon-plus-mobile.svg");
-  background-repeat: no-repeat;
-}
-
 .show-more__description {
   font-size: 12px;
   line-height: 16px;
@@ -45,4 +34,15 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: 20px;
+}
+
+.show-more__button::before {
+  content: "";
+  position: absolute;
+  left: 140px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
 }

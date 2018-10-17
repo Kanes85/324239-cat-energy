@@ -1,0 +1,11 @@
+.logo-image:hover {
+  opacity: 0.8;
+}
+
+.logo-image:active {
+  opacity: 0.6;
+}
+
+.main-footer__social-img:hover .main-footer__social-svg-st0 {
+  fill: $main_color;
+}

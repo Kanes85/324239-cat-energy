@@ -7,6 +7,17 @@
   margin-bottom: 35px;
 }
 
+.special-offer::after {
+  content: "";
+  position: absolute;
+  left: 120px;
+  top: 70px;
+  width: 55px;
+  height: 60px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+}
+
 .special-offer__description {
   font-size:16px;
   line-height: 20px;
