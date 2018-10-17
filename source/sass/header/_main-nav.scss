@@ -5,8 +5,13 @@
 .page-header__logo {
   display: block;
   padding: 10px;
-  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-left: 18px;
   border-bottom: 1px solid #e6e6e6;
+}
+
+.main-nav {
+  display: none;
 }
 
 .main-nav__list {

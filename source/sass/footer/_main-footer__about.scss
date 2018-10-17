@@ -13,8 +13,8 @@
 
 .main-footer__logo {
   text-align: center;
-  margin-bottom: 40px;
-  padding-top: 30px;
+  margin-bottom: 26px;
+  padding-top: 40px;
 }
 
 .main-footer__social {
@@ -31,8 +31,12 @@
   list-style: none;
   margin: 0 auto;
   margin-top: 26px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding: 0;
+}
+
+.main-footer__social-logo {
+  margin-right: 37px;
 }
 
 .main-footer__social-img {
@@ -54,8 +58,8 @@
 
 .main-footer__developers-icon {
   position: absolute;
-    left: 240px;
-    top: -15px;
+    left: 245px;
+    top: -12px;
     width: 42px;
     height: 47px;
 }

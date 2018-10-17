@@ -7,7 +7,8 @@
   @include font-regular;
   text-transform: uppercase;
   width: 226px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .selection-form__title {
@@ -26,12 +27,15 @@
 
 .about-cat,
 .target-selection {
-  border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 20px;
+  // border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 0;
 }
 
-.about-cat__paragraph:last-child {
-  margin-bottom: 25px;
+.about-cat__paragraph{
+  margin-top: 0;
+  &:last-child {
+    margin-bottom: 21px;
+  }
 }
 
 .select__form-label {
@@ -45,21 +49,23 @@
   @include font-regular;
   @include label;
   border: 1px solid #cdcdcd;
-  padding: 10px;
-  padding-left: 10px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  margin-bottom: 2px;
+  padding-top: 10px;
+  padding-bottom: 14px;
 }
 
 .about-cat__data--name {
+  width: 228px;
+}
+
+.about-cat__data--weight {
   width: 206px;
 }
 
-
-.about-cat__data--weight {
-  width: 184px;
-}
-
 .about-cat__data--age {
-  width: 151px;
+  width: 173px;
 }
 
 .target-selection__target-label {
@@ -67,19 +73,29 @@
   padding-left: 46px;
 }
 
+.selection-form__target-selection {
+  border: $border;
+  padding-top: 23px;
+  width: 320px;
+  margin-left: -20px;
+  margin-bottom: 26px;
+}
+
 .target-selection__target-label::before {
   content: "";
   position: absolute;
   left: 0;
-  top: -5px;
-  width: 30px;
-  height: 30px;
+  top: -2px;
+  width: 28px;
+  height: 28px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
 }
 
 .target-selection__block-input {
+  margin: 0 auto;
   margin-bottom: 25px;
+  width: 280px;
 }
 
 .target-selection__block-input:last-child {
@@ -201,7 +217,7 @@
 }
 
 .text-box__title::after {
-  right: -190px;
+  right: -192px;
   top: 14px;
   width: 158px;
 }
@@ -211,17 +227,3 @@
   top: 13px;
   width: 136px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// END

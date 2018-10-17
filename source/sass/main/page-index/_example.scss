@@ -2,7 +2,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   background-color: $background-color;
   border-bottom: 1px solid transparent;
 }
@@ -10,7 +10,8 @@
 .example__title {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  padding-top: 15px;
 }
 
 .example__description {
@@ -42,34 +43,40 @@
 }
 
 .example-blok__weight-reduction {
-  padding-top: 10px;
-  padding-right: 41px;
+  padding-top: 8px;
+  padding-right: 45px;
   padding-bottom: 10px;
   padding-left: 41px;
 }
 
 .example-blok__weight-description {
+  font-size: 12px;
+  line-height: 12px;
   position: absolute;
-  left: 15px;
-  bottom: -50px;
-  width: 90px;
+  left: 20px;
+  bottom: -40px;
+  width: 80px;
+  text-transform: lowercase;
   text-align: center;
   background-color: $background-color;
 }
 
 .example-blok__time-day {
   padding: 10px 20px 10px 20px;
-  padding-top: 10px;
+  padding-top: 8px;
   padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px;
 }
 
 .example-blok__time-description {
+  font-size: 12px;
+  line-height: 12px;
   position: absolute;
   left: 15px;
-  bottom: -50px;
+  bottom: -40px;
   width: 90px;
+  text-transform: lowercase;
   text-align: center;
   background-color: $background-color;
 }
@@ -80,13 +87,6 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-}
-
-.slider__switch-label {
-  @include font-regular;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 .example__slaider {
@@ -125,13 +125,17 @@
 }
 
 .slider__switch-label {
+  @include font-regular;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
   position: absolute;
-  bottom: 15px;
+  bottom: 12px;
   z-index: 50;
 }
 
 .slider__switch-label-before {
-  left: 65px;
+  left: 63px;
 }
 
 .slider__switch-label-after {
@@ -141,7 +145,7 @@
 .switch {
  position: relative;
  left: 118px;
- bottom: -290px;
+ bottom: -293px;
  display: inline-block;
  width: 84px;
  height: 12px;
@@ -155,7 +159,7 @@
   content: "";
   position: absolute;
   top: 3px;
-  width: 35px;
+  width: 36px;
   height: 6px;
   background-color: #68b738;
   border-radius: 6px;
@@ -181,11 +185,11 @@
  }
 
  .slider__switch-before:checked ~ .switch::after {
-   left: 3px;
+   left: 5px;
    // animation: before 0.30s forwards linear;
  }
 
  .slider__switch-after:checked ~ .switch::after {
-   transform: translateX(45px);
+   transform: translateX(43px);
    // animation: after 0.30s forwards  linear;
  }
