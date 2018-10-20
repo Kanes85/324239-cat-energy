@@ -6,29 +6,36 @@
 
 .additional-goods__main-title {
   @include font-regular;
+  position: relative;
+  margin-top: 27px;
+  margin-bottom: 0;
+  padding-bottom: 34px;
   font-size: 24px;
   line-height: 24px;
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  padding-bottom: 30px;
-  border-bottom: $border;
   border-color: #cdcdcd;
+  border-bottom: $border;
 }
 
 .additional-goods__main-title::after {
   content: "";
   position: absolute;
-  right: -20px;
   top: 14px;
-  background-color: $main_color;
+  right: -20px;
   width: 53px;
   height: 3px;
+  background-color: $main_color;
+}
+
+.additional-goods__wrapper-flex {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  min-height: 128px;
 }
 
 .additional-goods__wrapper {
-  border-bottom: $border;
   border-color: #cdcdcd;
+  border-bottom: $border;
 }
 
 .additional-goods__wrapper:last-child {
@@ -37,16 +44,19 @@
 
 .additional-goods__title {
   @include font-regular;
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 12px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
 }
 
 .additional-goods__description {
-  line-height: 14px;
   width: 280px;
+  margin-bottom: 14px;
   border-collapse: collapse;
-  margin-bottom: 15px;
+  line-height: 14px;
 }
 
 .additional-goods__price {
@@ -55,5 +65,7 @@
 
 .additional-goods__button {
   @include big-btn;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 20px;
 }

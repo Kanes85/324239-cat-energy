@@ -5,7 +5,7 @@ body {
 }
 
 .center {
-  width: 280;
+  width: 280px;
   margin: 0 auto;
 }
 
@@ -23,14 +23,14 @@ body {
 .button {
   @include font-regular;
   display: inline-block;
-  text-decoration: none;
+  padding: 10px;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: #68b738;
-  padding: 10px;
-  text-align: center;
   border: none;
   cursor: pointer;
 }

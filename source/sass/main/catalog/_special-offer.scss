@@ -1,17 +1,17 @@
 .special-offer {
   @include width;
   position: relative;
+  margin-bottom: 35px;
   background-color: #7dc154;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  margin-bottom: 35px;
 }
 
 .special-offer::after {
   content: "";
   position: absolute;
-  left: 120px;
-  top: 70px;
+  top: 66px;
+  left: 114px;
   width: 55px;
   height: 60px;
   background-image: url("../img/icon-gift.svg");
@@ -19,12 +19,12 @@
 }
 
 .special-offer__description {
-  font-size:16px;
-  line-height: 20px;
-  color: #ffffff;
-  text-align: center;
   width: 170px;
   margin: 0 auto;
   padding-top: 190px;
   padding-bottom: 39px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
 }

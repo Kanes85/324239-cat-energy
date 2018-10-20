@@ -5,27 +5,27 @@
 
 .program-selection__task {
   @include font-regular;
-  text-transform: uppercase;
   width: 226px;
   margin-top: 0;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 .selection-form__title {
   @include font-regular;
   position: relative;
+  margin-bottom: 36px;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 36px;
 }
 
 .selection-label {
-  border: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  border: none;
 }
 
-.about-cat__paragraph{
+.about-cat__paragraph {
   margin-top: 0;
   &:last-child {
     margin-bottom: 21px;
@@ -42,12 +42,12 @@
 .contacts-data__field {
   @include font-regular;
   @include label;
-  border: 1px solid #cdcdcd;
-  padding-left: 14px;
   box-sizing: border-box;
   margin-bottom: 2px;
   padding-top: 10px;
   padding-bottom: 14px;
+  padding-left: 14px;
+  border: $border-input;
 }
 
 .about-cat__data--name {
@@ -76,32 +76,33 @@
 }
 
 .selection-form__target-selection {
-  border: $border;
-  padding-top: 22px;
-  width: 320px;
   box-sizing: border-box;
-  margin-left: -20px;
+  width: 320px;
   margin-bottom: 27px;
+  margin-left: -20px;
+  padding-top: 22px;
+  border: $border;
 }
 
 .target-selection__target-label::before {
   content: "";
   position: absolute;
-  left: 0;
   top: -2px;
+  left: 0;
   width: 28px;
   height: 28px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .target-selection__block-input {
+  width: 280px;
   margin: 0 auto;
   margin-bottom: 25px;
-  width: 280px;
-    &:last-child {
-      margin-bottom: 22px;
-    }
+  &:last-child {
+    margin-bottom: 22px;
+  }
 }
 
 .contacts-data__paragraph {
@@ -115,49 +116,49 @@
 }
 
 .contacts-data__field--mail {
-  width: 219px;
   box-sizing: border-box;
+  width: 219px;
   padding-right: 40px;
 }
 
 .contacts-data__field--mail-icon {
-  position:  absolute;
-  right: 15px;
+  position: absolute;
   top: 15px;
+  right: 15px;
 }
 
 .contacts-data__field--phone {
-  width: 202px;
   box-sizing: border-box;
+  width: 202px;
   padding-right: 40px;
 }
 
 .contacts-data__field--phone-icon {
-  position:  absolute;
-  right: 13px;
+  position: absolute;
   top: 10px;
+  right: 13px;
 }
 
 .text-box__textarea-box {
+  @include font-regular;
+  box-sizing: border-box;
   width: 280px;
   height: 150px;
-  @include font-regular;
+  padding-top: 11px;
+  padding-left: 13px;
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
   color: #444444;
-  padding-left: 13px;
-  padding-top: 11px;
-  box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 .text-box__textarea-box::placeholder {
   @include font-regular;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
   color: #444444;
-  box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 .text-box {
@@ -167,9 +168,9 @@
 .additional__paragraph {
   margin-top: 5px;
   margin-bottom: 22px;
-    &:last-child {
-      margin-bottom: 39px;
-    }
+  &:last-child {
+    margin-bottom: 39px;
+  }
 }
 
 .additional__target-label {
@@ -180,11 +181,12 @@
 .additional__target-label::before {
   content: "";
   position: absolute;
-  left: 0;
   top: -3px;
+  left: 0;
   width: 28px;
   height: 28px;
   border: 1px solid #cdcdcd;
+  cursor: pointer;
 }
 
 .additional__target:checked + .additional__target-label::before {
@@ -195,22 +197,20 @@
 }
 
 .selection-form__button {
-  // padding-bottom: 10px;
-  // padding-top: 11px;
+  box-sizing: border-box;
+  width: 280px;
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 20px;
-  width: 280px;
-  box-sizing: border-box;
 }
 
 .selection-form__important-information {
   display: inline-block;
+  width: 280px;
+  margin-bottom: 32px;
   font-size: 14px;
   line-height: 16px;
-  width: 280px;
   text-align: center;
-  margin-bottom: 32px;
 }
 
 .contacts-data__title::after,
@@ -218,24 +218,24 @@
 .additional__title::after {
   content: "";
   position: absolute;
-  background-color: $main_color;
   height: 3px;
+  background-color: $main_color;
 }
 
 .contacts-data__title::after {
-  right: -20px;
   top: 15px;
+  right: -20px;
   width: 99px;
 }
 
 .text-box__title::after {
-  right: -180px;
   top: 14px;
+  right: -180px;
   width: 158px;
 }
 
 .additional__title::after {
-  right: -160px;
   top: 14px;
+  right: -160px;
   width: 136px;
 }

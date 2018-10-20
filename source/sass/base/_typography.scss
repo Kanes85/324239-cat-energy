@@ -11,10 +11,10 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #000000;
+  font-family: "Arial", sans-serif;
+  color: #111111;
 }
 
 .main-nav {
@@ -26,17 +26,17 @@ body {
 
 .lead-titles {
   @include font-regular;
+  margin-top: 0;
   font-size: 36px;
   line-height: 60px;
-  margin-top: 0;
 }
 
 .page-main__title {
   @include font-regular;
-  font-size: 36px;
-  line-height: 60px;
   margin: 0;
   margin-top: 15px;
-  padding-left: 20px;
   margin-bottom: 26px;
+  padding-left: 20px;
+  font-size: 36px;
+  line-height: 60px;
 }

@@ -1,11 +1,127 @@
-.logo-image:hover {
-  opacity: 0.8;
+.logo-image {
+  &:hover {
+    opacity: 0.8;
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
-.logo-image:active {
-  opacity: 0.6;
+.button {
+  &:hover {
+    background-color: #5eaa2f;
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
+
+.show-more__button {
+  &:hover {
+    background-color: #ebebeb;
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+}
+
+.target__button:hover::after {
+  position: absolute;
+  bottom: 2px;
+  left: 96px;
+  width: 33px;
+  height: 11px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+}
+
+
+.target__button:active,
+.target__button:active::after {
+  opacity: 0.3;
+}
+
+.site-list__item-link {
+  &:hover {
+    color: rgba(17, 17, 17, 0.6);
+    &:active {
+      color: rgba(17, 17, 17, 0.3);
+    }
+  }
+}
+
+.site-list__item-link--active::after {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  left: 65px;
+  width: 189px;
+  height: 2px;
+  background-color: $main_color;
+}
+
+.site-list__item-link--active-small::after {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  left: 114px;
+  width: 90px;
+  height: 2px;
+  background-color: $main_color;
+}
+
+.slider__switch-label:hover {
+  position: absolute;
+  bottom: 8px;
+  z-index: 50;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #111111;
+  cursor: pointer;
+}
+
+.target-selection__target-label:active {
+  opacity: 0.3;
+}
+
+.additional__target-label:active {
+  opacity: 0.3;
+}
+
+.about-cat__data {
+  &:hover {
+    border-color: rgb(205, 205, 205);
+  }
+  &:focus {
+    outline: 2px solid #444444;
+  }
+}
+
+.contacts-data__field {
+  &:hover {
+    border-color: rgb(205, 205, 205);
+  }
+  &:focus {
+    outline: 2px solid #444444;
+  }
+}
+
+// .contacts-data__field--mail:invalid,
+// .contacts-data__field--phone:invalid {
+//   outline: 2px solid #ff8282;
+// }
 
 .main-footer__social-img:hover .main-footer__social-svg-st0 {
   fill: $main_color;
+}
+
+.main-footer__social-img:active .main-footer__social-svg-st0 {
+  fill: rgba(104, 183, 56, 0.3);
+}
+
+.main-footer__developers-link:hover .main-footer__developers-svg {
+  fill: $main_color;
+}
+
+.main-footer__developers-link:active {
+  opacity: 0.3;
 }

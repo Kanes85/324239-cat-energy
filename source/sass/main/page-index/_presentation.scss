@@ -2,11 +2,11 @@
   position: relative;
   width: 320px;
   max-height: 305px;
+  margin-bottom: 199px;
   background-color: #63a73a;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  margin-bottom: 199px;
 }
 
 .presentation::after {
@@ -23,29 +23,29 @@
   @include font-regular;
   display: inline-block;
   width: 265px;
+  margin-top: 28px;
+  margin-bottom: 25px;
+  margin-left: 27px;
   font-size: 36px;
   line-height: 36px;
-  color: #ffffff;
   text-align: center;
-  margin-top: 28px;
-  margin-left: 27px;
-  margin-bottom: 25px;
+  color: #ffffff;
 }
 
 .presentation__description {
   @include font-regular;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-left: 60px;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 0;
-  margin-left: 60px;
-  margin-bottom: 25px;
 }
 
 .presentation__button {
   position: absolute;
-  left: 20px;
   bottom: -176px;
+  left: 20px;
   padding: 11px 74px;
 }

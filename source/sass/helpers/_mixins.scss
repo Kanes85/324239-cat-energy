@@ -1,16 +1,16 @@
 @mixin font-medium {
-  font-family: "OswaldMedium", "Arial", sans-serif;
   font-weight: 500;
+  font-family: "OswaldMedium", "Arial", sans-serif;
 }
 
 @mixin font-regular {
-  font-family: "OswaldRegular", "Arial", sans-serif;
   font-weight: 400;
+  font-family: "OswaldRegular", "Arial", sans-serif;
 }
 
 @mixin link {
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 }
 
 @mixin label {
@@ -20,8 +20,8 @@
 }
 
 @mixin big-btn {
-  width: 280px;
   box-sizing: border-box;
+  width: 280px;
 }
 
 @mixin width {
