@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
-  box-sizing: border-box;
   width: 320px;
   min-height: 210px;
   margin: 0 auto;
@@ -54,13 +53,10 @@
 
 .characteristics-goods__property {
   width: 95px;
+  font-weight: 400;
   text-align: left;
 }
 
 .characteristics-goods__parameter {
   text-align: right;
-}
-
-.characteristics-goods__property {
-  font-weight: 400;
 }

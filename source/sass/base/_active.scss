@@ -1,6 +1,7 @@
 .logo-image {
   &:hover {
     opacity: 0.8;
+
     &:active {
       opacity: 0.6;
     }
@@ -10,6 +11,7 @@
 .button {
   &:hover {
     background-color: #5eaa2f;
+
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }
@@ -19,6 +21,7 @@
 .show-more__button {
   &:hover {
     background-color: #ebebeb;
+
     &:active {
       color: rgba(68, 68, 68, 0.3);
     }
@@ -44,6 +47,7 @@
 .site-list__item-link {
   &:hover {
     color: rgba(17, 17, 17, 0.6);
+
     &:active {
       color: rgba(17, 17, 17, 0.3);
     }
@@ -91,6 +95,7 @@
   &:hover {
     border-color: rgb(205, 205, 205);
   }
+
   &:focus {
     outline: 2px solid #444444;
   }
@@ -100,6 +105,7 @@
   &:hover {
     border-color: rgb(205, 205, 205);
   }
+
   &:focus {
     outline: 2px solid #444444;
   }
