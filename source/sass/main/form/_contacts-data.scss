@@ -13,6 +13,14 @@
   padding-bottom: 14px;
   padding-left: 14px;
   border: $border-input;
+
+  &:hover {
+    border-color: rgb(205, 205, 205);
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
 }
 
 .contacts-data__paragraph {
@@ -44,22 +52,12 @@
   right: 13px;
 }
 
-.contacts-data__field {
-  &:hover {
-    border-color: rgb(205, 205, 205);
-  }
-
-  &:focus {
-    outline: 2px solid #444444;
-  }
-}
-
 .contacts-data__title::after {
   content: "";
   position: absolute;
-  height: 3px;
-  background-color: $main_color;
   top: 15px;
   right: -20px;
   width: 99px;
+  height: 3px;
+  background-color: $main_color;
 }

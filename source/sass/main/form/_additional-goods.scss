@@ -39,11 +39,11 @@
 .additional__title::after {
   content: "";
   position: absolute;
+  top: 14px;
+  right: -155px;
+  width: 136px;
   height: 3px;
   background-color: $main_color;
-  top: 14px;
-  right: -156px;
-  width: 136px;
 }
 
 .additional__target-label:active {

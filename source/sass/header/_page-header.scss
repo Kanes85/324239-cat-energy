@@ -54,9 +54,6 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-}
-
-.main-nav {
   // display: none;
 }
 
@@ -75,9 +72,7 @@
   padding: 20px 0;
   text-align: center;
   border-bottom: 1px solid #e6e6e6;
-}
 
-.site-list__item-link {
   &:hover {
     color: rgba(17, 17, 17, 0.6);
 

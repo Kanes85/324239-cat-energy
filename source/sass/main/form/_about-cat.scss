@@ -27,6 +27,14 @@
   padding-bottom: 14px;
   padding-left: 14px;
   border: $border-input;
+
+  &:hover {
+    border-color: rgb(205, 205, 205);
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
 }
 
 .about-cat__data--name {
@@ -39,14 +47,4 @@
 
 .about-cat__data--age {
   width: 173px;
-}
-
-.about-cat__data {
-  &:hover {
-    border-color: rgb(205, 205, 205);
-  }
-
-  &:focus {
-    outline: 2px solid #444444;
-  }
 }

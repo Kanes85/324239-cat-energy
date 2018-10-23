@@ -25,11 +25,11 @@
 }
 
 .text-box__title::after {
-    content: "";
-    position: absolute;
-    height: 3px;
-    background-color: $main_color;
-    top: 14px;
-    right: -176px;
-    width: 158px;
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: -176px;
+  width: 158px;
+  height: 3px;
+  background-color: $main_color;
 }
