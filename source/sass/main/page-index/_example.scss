@@ -86,7 +86,6 @@
   line-height: 12px;
   text-align: center;
   text-transform: lowercase;
-
   background-color: $background-color;
 }
 
@@ -118,8 +117,8 @@
   display: none;
 }
 
-.slider__switch-before:checked ~ .example__slaider-item--before,
-.slider__switch-after:checked ~ .example__slaider-item--after {
+.slider__switch-before:checked ~ .example__slaider-wrapper .example__slaider-item--before,
+.slider__switch-after:checked ~ .example__slaider-wrapper .example__slaider-item--after {
   display: block;
 }
 
