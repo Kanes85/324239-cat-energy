@@ -40,23 +40,18 @@
 }
 
 .product-catalog__button {
+  @include button;
   width: 280px;
   font-size: 16px;
   line-height: 20px;
 }
 
-.characteristics-goods {
-  border-collapse: collapse;
-  font-size: 12px;
-  line-height: 16px;
-}
+.button {
+  &:hover {
+    background-color: #5eaa2f;
 
-.characteristics-goods__property {
-  width: 95px;
-  font-weight: 400;
-  text-align: left;
-}
-
-.characteristics-goods__parameter {
-  text-align: right;
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }

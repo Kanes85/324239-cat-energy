@@ -29,3 +29,18 @@
   margin: 0 auto;
   padding: 0;
 }
+
+@mixin button {
+  @include font-regular;
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #68b738;
+  border: none;
+  cursor: pointer;
+}

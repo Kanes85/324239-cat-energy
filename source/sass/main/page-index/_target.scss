@@ -96,3 +96,18 @@
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 }
+
+.target__button:hover::after {
+  position: absolute;
+  bottom: 2px;
+  left: 96px;
+  width: 33px;
+  height: 11px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+}
+
+.target__button:active,
+.target__button:active::after {
+  opacity: 0.3;
+}

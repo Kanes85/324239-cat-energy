@@ -44,6 +44,7 @@
 }
 
 .presentation__button {
+  @include button;
   position: absolute;
   bottom: -176px;
   left: 20px;

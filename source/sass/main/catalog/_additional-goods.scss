@@ -64,8 +64,19 @@
 }
 
 .additional-goods__button {
+  @include button;
   @include big-btn;
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.button {
+  &:hover {
+    background-color: #5eaa2f;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }

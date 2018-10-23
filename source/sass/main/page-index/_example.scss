@@ -14,6 +14,13 @@
   padding-top: 16px;
 }
 
+.lead-titles {
+  @include font-regular;
+  margin-top: 0;
+  font-size: 36px;
+  line-height: 60px;
+}
+
 .example__description {
   width: 279px;
   margin: 0 auto;
@@ -111,8 +118,8 @@
   display: none;
 }
 
-.slider__switch-before:checked ~ .example__slaider-wrapper .example__slaider-item--before,
-.slider__switch-after:checked ~ .example__slaider-wrapper .example__slaider-item--after {
+.slider__switch-before:checked ~ .example__slaider-item--before,
+.slider__switch-after:checked ~ .example__slaider-item--after {
   display: block;
 }
 
@@ -161,30 +168,19 @@
   border-radius: 6px;
 }
 
-// @keyframes before {
-//   0% {
-//     transform: translateX(45px);
-//   }
-//   100% {
-//     transform: translateX(3px);
-//   }
-// }
-//
-// @keyframes after {
-//   0% {
-//     transform: translateX(3px);
-//   }
-//   100% {
-//     transform: translateX(45px);
-//   }
-// }
-
 .slider__switch-before:checked ~ .switch::after {
   left: 5px;
-  // animation: before 0.30s forwards linear;
 }
 
 .slider__switch-after:checked ~ .switch::after {
   transform: translateX(43px);
-  // animation: after 0.30s forwards  linear;
+}
+
+.slider__switch-label:hover {
+  position: absolute;
+  bottom: 8px;
+  z-index: 50;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #111111;
+  cursor: pointer;
 }

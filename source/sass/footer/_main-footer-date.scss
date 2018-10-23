@@ -61,3 +61,19 @@
   position: relative;
   z-index: 50;
 }
+
+.main-footer__social-img:hover .main-footer__social-svg-st0 {
+  fill: $main_color;
+}
+
+.main-footer__social-img:active .main-footer__social-svg-st0 {
+  fill: rgba(104, 183, 56, 0.3);
+}
+
+.main-footer__developers-link:hover .main-footer__developers-svg {
+  fill: $main_color;
+}
+
+.main-footer__developers-link:active {
+  opacity: 0.3;
+}
