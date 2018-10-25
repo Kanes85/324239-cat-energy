@@ -2,6 +2,8 @@
   @include font-regular;
   @include label;
   padding-right: 10px;
+  position: relative;
+  padding-left: 47px;
 }
 
 .additional__paragraph {
@@ -11,11 +13,6 @@
   &:last-child {
     margin-bottom: 39px;
   }
-}
-
-.additional__target-label {
-  position: relative;
-  padding-left: 47px;
 }
 
 .additional__target-label::before {
