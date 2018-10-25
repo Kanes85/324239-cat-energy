@@ -50,3 +50,13 @@
   left: 20px;
   padding: 11px 74px;
 }
+
+.presentation__button {
+  &:hover {
+    background-color: #5eaa2f;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}

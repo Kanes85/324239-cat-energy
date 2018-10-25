@@ -1,0 +1,85 @@
+.slaider {
+  position: relative;
+  margin-bottom: 23px;
+}
+
+.slaider__wrapper {
+  position: relative;
+  display: flex;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slaider__item {
+  position: relative;
+  display: none;
+}
+
+.slider__switch-before:checked ~ .slaider__wrapper .slaider__item--before,
+.slider__switch-after:checked ~ .slaider__wrapper .slaider__item--after {
+  display: block;
+}
+
+.slaider__image {
+  margin-bottom: 60px;
+}
+
+.slider__switch-label {
+  @include font-regular;
+  position: absolute;
+  bottom: 11px;
+  z-index: 50;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.slider__switch-label-before {
+  left: 63px;
+}
+
+.slider__switch-label-after {
+  right: 59px;
+}
+
+.switch {
+  position: relative;
+  bottom: -293px;
+  left: 118px;
+  z-index: 50;
+  display: inline-block;
+  width: 84px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  width: 36px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 6px;
+}
+
+.slider__switch-before:checked ~ .switch::after {
+  left: 5px;
+}
+
+.slider__switch-after:checked ~ .switch::after {
+  transform: translateX(43px);
+}
+
+.slider__switch-label:hover {
+  position: absolute;
+  bottom: 8px;
+  z-index: 50;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #111111;
+  cursor: pointer;
+}

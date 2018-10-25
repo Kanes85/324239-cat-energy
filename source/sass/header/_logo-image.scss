@@ -1,0 +1,17 @@
+.page-header__logo {
+  display: block;
+  padding: 10px;
+  padding-bottom: 5px;
+  padding-left: 18px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__logo-image {
+  &:hover {
+    opacity: 0.8;
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}

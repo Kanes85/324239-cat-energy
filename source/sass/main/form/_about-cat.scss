@@ -1,9 +1,3 @@
-.selection-label {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 .about-cat__paragraph {
   margin-top: 0;
 
@@ -12,7 +6,7 @@
   }
 }
 
-.select__form-label {
+.about-cat__data-label {
   @include font-regular;
   @include label;
   padding-right: 10px;

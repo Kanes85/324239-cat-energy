@@ -17,10 +17,6 @@
   flex-direction: column;
 }
 
-.page-main__title--border {
-  padding-bottom: 2px;
-}
-
 .product-catalog__image {
   width: 140px;
 }
@@ -46,7 +42,7 @@
   line-height: 20px;
 }
 
-.button {
+.product-catalog__button {
   &:hover {
     background-color: #5eaa2f;
 

@@ -1,4 +1,4 @@
-.select__form-label {
+.target-selection__target-label {
   @include font-regular;
   @include label;
   padding-right: 10px;
@@ -9,7 +9,7 @@
   padding-left: 46px;
 }
 
-.selection-form__target-selection {
+.target-selection {
   box-sizing: border-box;
   width: 320px;
   margin-bottom: 27px;

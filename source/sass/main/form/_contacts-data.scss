@@ -1,4 +1,4 @@
-.select__form-label {
+.contacts-data__field-label {
   @include font-regular;
   @include label;
   padding-right: 10px;
@@ -26,6 +26,10 @@
 .contacts-data__paragraph {
   position: relative;
   margin-top: 0;
+}
+
+.contacts-data__paragraph:last-child {
+  margin-bottom: 25px;
 }
 
 .contacts-data__field--mail {

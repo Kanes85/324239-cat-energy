@@ -1,0 +1,27 @@
+// Кнопка "гамбургер" для открытия меню
+.control-menu__hamburger {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  width: 24px;
+  height: 18px;
+  background-color: transparent;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+// Крест закрывающий меню
+.control-menu__close {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
