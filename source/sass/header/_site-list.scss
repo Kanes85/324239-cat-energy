@@ -3,7 +3,6 @@
   @include link;
   position: relative;
   display: block;
-  width: 320px;
   padding: 20px 0;
   text-align: center;
   border-bottom: 1px solid #e6e6e6;
@@ -17,22 +16,15 @@
   }
 }
 
-.site-list__item-link--active::after {
-  content: "";
-  position: absolute;
-  bottom: 9px;
-  left: 65px;
-  width: 189px;
-  height: 2px;
-  background-color: $main_color;
-}
+@media (min-width: 768px) {
+  .site-list__item-link {
+    @include font-regular;
+    display: block;
+    border: none;
+  }
 
-.site-list__item-link--active-small::after {
-  content: "";
-  position: absolute;
-  bottom: 9px;
-  left: 114px;
-  width: 90px;
-  height: 2px;
-  background-color: $main_color;
+  .site-list__item-link--active {
+    border-bottom: 2px solid $main_color;
+    padding-bottom: 7px;
+  }
 }

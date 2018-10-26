@@ -58,3 +58,50 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .presentation {
+    position: relative;
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 534px;
+    background: none;
+  }
+
+  .presentation__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #111111;
+    width: 420px;
+    margin-left: 87px;
+    margin-bottom: 41px;
+  }
+
+  .presentation__description {
+    color: #111111;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 89px;
+    margin-bottom: 20px;
+  }
+
+  .presentation::after {
+    content: "";
+    display: block;
+    width: 708px;
+    height: 609px;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 708px 608px;
+  }
+
+  .presentation__button {
+    font-size: 20px;
+    line-height: 20px;
+    bottom: -4px;
+    left: 88px;
+    padding: 16px 27px;
+  }
+}

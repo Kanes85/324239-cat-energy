@@ -1,4 +1,4 @@
-.target__wrapper {
+.target__item {
   width: 280px;
   margin: 0 auto;
   margin-bottom: 17px;
@@ -6,7 +6,7 @@
   border-bottom: 1px solid transparent;
 }
 
-.target__wrapper:last-child {
+.target__item:last-child {
   margin-bottom: 16px;
 }
 
@@ -110,4 +110,104 @@
 .target__button:active,
 .target__button:active::after {
   opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .target__item {
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  .target__item:last-child {
+    margin-bottom: 46px;
+  }
+
+  .target__title {
+    font-size: 36px;
+    line-height: 37px;
+    padding-top: 75px;
+    padding-left: 53px;
+    margin-bottom: 25px;
+  }
+
+  .target__title--slim-image::before,
+  .target__title--mass-image::before {
+    content: "";
+    position: absolute;
+    top: 91px;
+    left: 446px;
+    width: 200px;
+    height: 200px;
+    background-color: $main_color;
+    border-radius: 50%;
+  }
+
+  .target__title--slim-image::after {
+    content: "";
+    position: absolute;
+    top: 79px;
+    left: 476px;
+    width: 140px;
+    height: 194px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .target__title--mass-image::after {
+    content: "";
+    position: absolute;
+    top: 134px;
+    left: 412px;
+    width: 268px;
+    height: 112px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .target__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 372px;
+    margin-right: 25px;
+    margin-bottom: 21px;
+    margin-left: 52px;
+    padding-bottom: 35px;
+    border: none;
+  }
+
+  .target__description--width {
+    width: 343px;
+  }
+
+  .target__button {
+    margin-bottom: 60px;
+    margin-left: 53px;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .target__button::after {
+    bottom: 4px;
+    left: 131px;
+  }
+
+  .target__button-mass::after {
+    bottom: 4px;
+    left: 125px;
+  }
+
+  .target__button:hover::after {
+    bottom: 4px;
+    left: 131px;
+  }
+
+  .target__button-mass:hover::after {
+    bottom: 4px;
+    left: 125px;
+  }
 }

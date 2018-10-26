@@ -29,6 +29,8 @@
 }
 
 .main-footer__cooperation-location {
+  display: block;
+  color: #444444;
   width: 140px;
   margin: 0;
   line-height: 20px;
@@ -121,10 +123,6 @@
   list-style: none;
 }
 
-.main-footer__social-logo {
-  margin-right: 37px;
-}
-
 .main-footer__social-img {
   vertical-align: middle;
 }
@@ -148,4 +146,124 @@
   left: 245px;
   width: 42px;
   height: 47px;
+}
+
+@media (min-width: 768px) {
+  .main-footer {
+    width: 768px;
+  }
+
+  .main-footer__cooperation {
+    width: 625px;
+    margin-bottom: 57px;
+  }
+
+  .main-footer__cooperation-invitation {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .main-footer__cooperation-location {
+    color: #444444;
+    font-size: 16px;
+    line-height: 20px;
+    width: 195px;
+    text-align: right;
+  }
+
+  .main-footer__cooperation-location-height {
+    display: block;
+    padding-top: 19px;
+  }
+
+  .main-footer__date,
+  .main-footer__about {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .main-footer__date {
+    padding-bottom: 113px;
+  }
+
+  .main-footer__map {
+    width: 768px;
+  }
+
+  .main-footer__map-image {
+    width: 768px;
+    height: 397px;
+  }
+
+  .main-footer__map::before {
+    top: 147px;
+    left: 317px;
+    z-index: 15;
+    width: 133px;
+    height: 106px;
+    background-size: 124px;
+  }
+
+  .main-footer__about-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 708px;
+    justify-content: space-between;
+    text-align: center;
+    vertical-align: bottom;
+    height: 84px;
+    margin: 0 auto;
+    padding-top: 65px;
+  }
+
+  .main-footer__logo,
+  .main-footer__social,
+  .main-footer__developers,
+  .main-footer__social-network {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .main-footer__developers {
+    display: block;
+    width: 214px;
+  }
+
+  .main-footer__developers-icon {
+    position: absolute;
+    top: -12px;
+    left: 130px;
+    width: 42px;
+    height: 47px;
+  }
+
+  .main-footer__social-network {
+    justify-content: space-between;
+    width: 125px;
+  }
+
+  .main-footer__social-svg--vk {
+    width: 31px;
+    height: 19px;
+  }
+
+  .main-footer__social-svg--ins {
+    width: 23px;
+    height: 23px;
+  }
+
+  .main-footer__social-svg--fb {
+    width: 14px;
+    height: 28px;
+    margin-top: -4px;
+  }
+
+  .main-footer__social-logo {
+    margin-right: 0;
+  }
+
+  .main-footer__logo {
+    padding-right: 70px;
+  }
 }

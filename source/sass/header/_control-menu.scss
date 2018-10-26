@@ -25,3 +25,9 @@
   background-position: center;
   border: none;
 }
+
+@media (min-width: 768px) {
+  .control-menu {
+    display: none;
+  }
+}
