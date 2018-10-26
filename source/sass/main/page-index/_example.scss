@@ -1,0 +1,91 @@
+.example {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 1px;
+  padding: 0;
+  background-color: $background-color;
+  border-bottom: 1px solid transparent;
+}
+
+.example__title {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding-top: 16px;
+}
+
+.example__description {
+  width: 279px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+.example-block__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.example-blok__date {
+  @include font-regular;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.example-blok__weight,
+.example-blok__time {
+  position: relative;
+}
+
+.example-blok__weight-reduction {
+  padding-top: 8px;
+  padding-right: 43px;
+  padding-bottom: 10px;
+  padding-left: 41px;
+}
+
+.example-blok__weight-description {
+  position: absolute;
+  bottom: -42px;
+  left: 21px;
+  width: 80px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: $background-color;
+}
+
+.example-blok__time-day {
+  padding: 10px 20px 10px 20px;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.example-blok__time-description {
+  position: absolute;
+  bottom: -42px;
+  left: 16px;
+  width: 90px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: $background-color;
+}
+
+.example-block__cost {
+  @include font-regular;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

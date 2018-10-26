@@ -1,0 +1,21 @@
+.program-selection {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.program-selection__title {
+  @include font-regular;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 26px;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.program-selection__task {
+  @include font-regular;
+  width: 226px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}

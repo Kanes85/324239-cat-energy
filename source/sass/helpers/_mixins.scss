@@ -1,0 +1,46 @@
+@mixin font-medium {
+  font-weight: 500;
+  font-family: "OswaldMedium", "Arial", sans-serif;
+}
+
+@mixin font-regular {
+  font-weight: 400;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+}
+
+@mixin link {
+  color: #000000;
+  text-decoration: none;
+}
+
+@mixin label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+@mixin big-btn {
+  box-sizing: border-box;
+  width: 280px;
+}
+
+@mixin width {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin button {
+  @include font-regular;
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #68b738;
+  border: none;
+  cursor: pointer;
+}

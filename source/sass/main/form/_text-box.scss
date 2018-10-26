@@ -1,0 +1,35 @@
+.text-box__textarea-box {
+  @include font-regular;
+  box-sizing: border-box;
+  width: 280px;
+  height: 150px;
+  padding-top: 11px;
+  padding-left: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.text-box__textarea-box::placeholder {
+  @include font-regular;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+.text-box {
+  margin-bottom: 23px;
+}
+
+.text-box__title::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: -178px;
+  width: 158px;
+  height: 3px;
+  background-color: $main_color;
+}

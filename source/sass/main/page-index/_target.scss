@@ -1,0 +1,113 @@
+.target__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  background-color: $background-color;
+  border-bottom: 1px solid transparent;
+}
+
+.target__wrapper:last-child {
+  margin-bottom: 16px;
+}
+
+.target__title {
+  @include font-regular;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 90px;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.target__title-block1 {
+  padding-top: 29px;
+}
+
+.target__title-block2 {
+  padding-top: 32px;
+}
+
+.target__title--slim-image::before,
+.target__title--mass-image::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 22px;
+  width: 50px;
+  height: 50px;
+  background-color: $main_color;
+  border-radius: 50%;
+}
+
+.target__title--slim-image::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.target__title--mass-image::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 13px;
+  width: 66px;
+  height: 50px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.target__description {
+  margin-right: 25px;
+  margin-bottom: 21px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.target__button {
+  @include font-regular;
+  @include link;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 21px;
+  margin-left: 20px;
+  padding-right: 40px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.target__button::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 96px;
+  width: 24px;
+  height: 11px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+}
+
+.target__button:hover::after {
+  position: absolute;
+  bottom: 2px;
+  left: 96px;
+  width: 33px;
+  height: 11px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+}
+
+.target__button:active,
+.target__button:active::after {
+  opacity: 0.3;
+}

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "OswaldMedium";
+  src: url("../fonts/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OswaldRegular";
+  src: url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
+}
+
+body {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: #111111;
+}

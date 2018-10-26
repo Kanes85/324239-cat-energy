@@ -1,0 +1,48 @@
+.additional__target-label {
+  @include font-regular;
+  @include label;
+  padding-right: 10px;
+  position: relative;
+  padding-left: 47px;
+}
+
+.additional__paragraph {
+  margin-top: 5px;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 39px;
+  }
+}
+
+.additional__target-label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cdcdcd;
+  cursor: pointer;
+}
+
+.additional__target:checked + .additional__target-label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+.additional__title::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: -157px;
+  width: 136px;
+  height: 3px;
+  background-color: $main_color;
+}
+
+.additional__target-label:active {
+  opacity: 0.3;
+}
