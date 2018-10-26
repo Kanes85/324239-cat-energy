@@ -4,6 +4,14 @@ body {
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
 // img {
 //   max-width: 100%;
 //   height: auto;

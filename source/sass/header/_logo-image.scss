@@ -15,3 +15,17 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .page-header__logo {
+    padding-top: 23px;
+    padding-left: 31px;
+    padding-right: 66px;
+    border: none;
+  }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
+}
