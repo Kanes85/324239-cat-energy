@@ -11,3 +11,17 @@
 .page-main__title--border {
   padding-bottom: 2px;
 }
+
+@media (min-width: 768px) {
+  .page-main {
+    width: 768px;
+  }
+
+  .page-main__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    margin-top: 33px;
+    margin-bottom: 162px;
+  }
+}

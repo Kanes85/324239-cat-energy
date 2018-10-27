@@ -13,7 +13,10 @@
   <header class="page-header">
     <!-- Cat Energy -->
     <a class="page-header__logo logo-image" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="195" height="45" alt="Логотип Cat Energy">
+      <picture>
+        <source class="page-header__logo-image--tablet" media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="195" height="45" alt="Логотип Cat Energy">
+      </picture>
     </a>
     <div class="control-menu">
       <button class="control-menu__hamburger">
@@ -43,7 +46,10 @@
 
       <div class="product-catalog__wrapper-flex">
         <div class="product-catalog__wrapper">
-          <img src="img/chicken-small-mobile@1x.jpg" class="product-catalog__image" width="140" height="144" alt="Cat energy pro 500 г">
+          <picture>
+            <source media="(min-width: 768px)" srcset="../img/chicken-small-tablet@1x.png">
+            <img src="img/chicken-small-mobile@1x.jpg" class="product-catalog__image product-catalog__image-small--tablet" width="140" height="144" alt="Cat energy pro 500 г">
+          </picture>
           <div class="product-catalog__flex">
             <h3 class="product-catalog__title">Cat energy pro 500 г</h3>
             <table class="product-catalog__description characteristics-goods">
