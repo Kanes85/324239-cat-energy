@@ -28,3 +28,23 @@
   text-align: center;
   color: #ffffff;
 }
+
+@media (min-width: 768px) {
+  .special-offer {
+    width: 708px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin-bottom: 77px;
+  }
+
+  .special-offer::after {
+    left: 91px;
+  }
+
+  .special-offer__description {
+    width: 170px;
+    margin-left: 423px;
+    padding-top: 72px;
+    text-align: left;
+  }
+}

@@ -32,7 +32,7 @@
 
 @mixin button {
   @include font-regular;
-  display: inline-block;
+  display: block;
   padding: 10px;
   font-size: 14px;
   line-height: 18px;

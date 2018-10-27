@@ -8,12 +8,9 @@
   @include font-regular;
   position: relative;
   margin-top: 27px;
-  margin-bottom: 0;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 24px;
-  border-color: #cdcdcd;
-  border-bottom: $border;
 }
 
 .additional-goods__main-title::after {
@@ -34,12 +31,14 @@
 }
 
 .additional-goods__wrapper {
+  border-top: $border;
   border-color: #cdcdcd;
-  border-bottom: $border;
-}
 
-.additional-goods__wrapper:last-child {
-  margin-bottom: 39px;
+  &:last-child {
+    border-bottom: $border;
+    border-color: #cdcdcd;
+    margin-bottom: 39px;
+  }
 }
 
 .additional-goods__title {
@@ -76,5 +75,93 @@
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .additional-goods {
+    width: 768px;
+  }
+
+  .additional-goods__main-title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 67px;
+    margin-bottom: 80px;
+  }
+
+  .additional-goods__main-title::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 28px;
+    height: 3px;
+    background-color: $main_color;
+  }
+
+  .additional-goods__main-title::after {
+    top: 22px;
+    right: 0;
+    width: 327px;
+  }
+
+  .additional-goods__wrapper-flex {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .additional-goods__wrapper {
+    border: $border;
+    border-bottom: none;
+    border-color: #cdcdcd;
+
+    &:last-child {
+      border-bottom: $border;
+      border-color: #cdcdcd;
+      margin-bottom: 69px;
+    }
+  }
+
+  .additional-goods__wrapper-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 633px;
+    margin: 0 auto;
+  }
+
+  .additional-goods__title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 25px;
+    padding-left: 2px;
+    margin-bottom: 26px;
+  }
+
+  .additional-goods__description {
+    width: 230px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 30px;
+    display: block;
+  }
+
+  .additional-goods__button {
+    width: 633px;
+    margin-bottom: 27px;
+  }
+
+  .additional-goods__characteristic {
+    width: 135px;
+    text-align: right;
+    padding: 0;
+  }
+
+  .additional-goods__price {
+    width: 95px;
+    text-align: right;
+    padding: 0;
   }
 }
