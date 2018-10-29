@@ -10,6 +10,13 @@
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 // Крест закрывающий меню
@@ -24,6 +31,13 @@
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: 768px) {
