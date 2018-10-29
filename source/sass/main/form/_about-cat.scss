@@ -1,9 +1,9 @@
+.about-cat {
+  margin-bottom: 8px;
+}
+
 .about-cat__paragraph {
   margin-top: 0;
-
-  &:last-child {
-    margin-bottom: 21px;
-  }
 }
 
 .about-cat__data-label {
@@ -41,4 +41,37 @@
 
 .about-cat__data--age {
   width: 173px;
+}
+
+@media (min-width: 768px) {
+  .about-cat {
+    margin-bottom: 56px;
+  }
+
+  .about-cat__data-label {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 3px;
+    padding-right: 14px;
+  }
+
+  .about-cat__data {
+    font-size: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+    padding-left: 19px;
+    padding-bottom: 13px;
+  }
+
+  .about-cat__data--name {
+    width: 564px;
+  }
+
+  .about-cat__data--weight {
+    width: 537px;
+  }
+
+  .about-cat__data--age {
+    width: 495px;
+  }
 }

@@ -19,3 +19,24 @@
   margin-bottom: 40px;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .program-selection {
+    width: 633px;
+    margin: 0 auto;
+  }
+
+  .program-selection__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .program-selection__task {
+    font-size: 20px;
+    line-height: 30px;
+    width: 387px;
+    margin-top: 55px;
+    padding-left: 1px;
+    margin-bottom: 66px;
+  }
+}

@@ -13,7 +13,6 @@
 
 .text-box__textarea-box::placeholder {
   @include font-regular;
-  box-sizing: border-box;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -32,4 +31,40 @@
   width: 158px;
   height: 3px;
   background-color: $main_color;
+}
+
+@media (min-width: 768px) {
+  .text-box__title::after {
+    top: 22px;
+    right: -516px;
+    width: 480px;
+  }
+
+  .text-box__title::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: -69px;
+    width: 30px;
+    height: 3px;
+    background-color: $main_color;
+  }
+
+  .text-box__textarea-box {
+    width: 633px;
+    height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 8px;
+    padding-left: 21px;
+  }
+
+  .text-box__textarea-box::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .text-box {
+    margin-bottom: 59px;
+  }
 }
