@@ -29,3 +29,14 @@
     height: 58px;
   }
 }
+
+@media (min-width: 1440px) {
+  .logo-image {
+    margin-left: 79px;
+}
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
+  }
+}

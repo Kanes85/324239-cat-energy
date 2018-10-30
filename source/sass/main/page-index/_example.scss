@@ -104,6 +104,7 @@
   .example__title {
     width: 100%;
     margin-bottom: 65px;
+    margin-left: 30px;
   }
 
   .example__description {
@@ -168,7 +169,6 @@
     background-color: #ffffff;
     font-size: 14px;
     line-height: 14px;
-    // width: 127px;
   }
 
   .example-blok__weight-description {
@@ -180,4 +180,63 @@
     width: 130px;
     bottom: -30px;
   }
+}
+
+@media (min-width: 1440px) {
+  .example {
+    width: 1440px;
+    margin: 0;
+    border: none;
+  }
+
+  .example__title {
+    padding-top: 0;
+    margin-left: 110px;
+    margin-bottom: 75px;
+  }
+
+  .example__row {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+  }
+
+  .example-block__wrapper {
+    flex-direction: column;
+  }
+
+  .example__wrapper {
+    width: 433px;
+    margin: 0;
+    margin-left: 110px;
+  }
+
+  .example__description {
+    width: 433px;
+    margin-top: 71px;
+    margin-bottom: 83px;
+  }
+
+  .example-blok__weight-description {
+    bottom: -39px;
+    background-color: #f2f2f2;
+  }
+
+  .example-blok__time-description {
+    bottom: -39px;
+    background-color: #f2f2f2;
+  }
+
+  .example-block__cost {
+    width: 329px;
+    margin-top: 81px;
+  }
+
+  .example-block__cost-height {
+    display: inline;
+    padding-left: 60px;
+  }
+
 }

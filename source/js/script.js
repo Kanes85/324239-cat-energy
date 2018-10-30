@@ -1,6 +1,5 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.control-menu__btn');
-// var control = document.querySelector('.control-menu__btn');
 
   navMain.classList.remove('main-nav--nojs');
 
@@ -16,19 +15,10 @@ var navToggle = document.querySelector('.control-menu__btn');
 
     navToggle.addEventListener('click', function() {
         if (navMain.classList.contains('main-nav--closed')) {
-          navToggle.classList.remove('.control-menu__close');
-          navToggle.classList.add('.control-menu__hamburger');
+          navToggle.classList.remove('control-menu__close');
+          navToggle.classList.add('control-menu__hamburger');
         } else {
-          navToggle.classList.remove('.control-menu__hamburger');
-          navToggle.classList.add('.control-menu__close');
+          navToggle.classList.remove('control-menu__hamburger');
+          navToggle.classList.add('control-menu__close');
         }
       });
-
-    // control.classList.remove('.control-menu__hamburger');
-    // control.classList.add('.control-menu__close');
-    //
-    // navToggle.classList.remove('.control-menu__close');
-    // navToggle.classList.add('.control-menu__hamburger');
-    //
-    // navToggle.classList.remove('.control-menu__hamburger');
-    // navToggle.classList.add('.control-menu__close');

@@ -11,3 +11,14 @@
     margin-bottom: 4px;
   }
 }
+
+@media (min-width: 1440px) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: 31px;
+    z-index: 50;
+  }
+}

@@ -286,3 +286,69 @@
     padding-right: 70px;
   }
 }
+
+@media (min-width: 1440px) {
+  .main-footer {
+    width: 1440px;
+  }
+
+  .main-footer__date {
+    position: relative;
+    width: 1440px;
+    min-height: 399px;
+    padding: 0;
+  }
+
+  .main-footer__cooperation {
+    position: absolute;
+    top: 94px;
+    left: 110px;
+    width: 570px;
+    min-height: 201px;
+    background-color: #ffffff;
+    z-index: 50;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+  }
+
+  .main-footer__cooperation-invitation {
+    margin-top: 6px;
+    margin-left: 22px;
+  }
+
+  .main-footer__cooperation-location {
+    margin-top: 6px;
+    margin-right: -5px;
+    text-align: left;
+  }
+
+  .main-footer__map-image {
+    width: 1440px;
+    height: 399px;
+  }
+
+  .main-footer__map::before {
+    top: 150px;
+    left: 993px;
+  }
+
+  .main-footer__about {
+    width: 1440px;
+  }
+
+  .main-footer__about-wrapper {
+    width: 1220px;
+  }
+
+  .logo-image {
+    margin: 0;
+  }
+
+  .main-footer__social-svg--fb {
+    margin-left: -2px;
+    margin-top: -4px;
+    margin-right: 1px;
+  }
+
+}

@@ -7,8 +7,12 @@ body {
 @media (min-width: 768px) {
   body {
     width: 768px;
-    margin: 0 auto;
-    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
   }
 }
 

@@ -28,3 +28,13 @@
     padding-bottom: 7px;
   }
 }
+
+@media (min-width: 1440px) {
+  .site-list__item-link {
+    color: #ffffff;
+  }
+
+  .site-list__item-link--active {
+    border-color: #ffffff;
+  }
+}

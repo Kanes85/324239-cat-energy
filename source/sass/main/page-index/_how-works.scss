@@ -151,3 +151,43 @@
     left: 25px;
   }
 }
+
+@media (min-width: 1440px) {
+  .how-works {
+    width: 1220px;
+    border: none;
+    margin-bottom: 7px;
+  }
+
+  .how-works__wrapper {
+    justify-content: space-between;
+  }
+
+  .how-works__wrapper-item {
+    width: 245px;
+  }
+
+  .how-works__wrapper-item::after {
+    top: -27px;
+  }
+
+  .how-works__wrapper-item--one::after {
+    content: "1";
+    right: -8px;
+  }
+
+  .how-works__wrapper-item--two::after {
+    content: "2";
+    right: 0;
+  }
+
+  .how-works__wrapper-item--three::after {
+    content: "3";
+    right: -3px;
+  }
+
+  .how-works__wrapper-item--four::after {
+    content: "4";
+    right: -3px;
+  }
+}
