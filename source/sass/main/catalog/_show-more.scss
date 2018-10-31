@@ -100,3 +100,24 @@
     margin-bottom: 86px;
   }
 }
+
+@media (min-width: 1440px) {
+  .show-more {
+    width: 245px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .show-more__button {
+    width:169px;
+  }
+
+  .show-more::before {
+    top: 57px;
+    left: 92px;
+  }
+
+  .show-more__view {
+    margin-bottom: 27px;
+  }
+}

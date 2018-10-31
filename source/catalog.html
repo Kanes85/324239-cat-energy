@@ -50,8 +50,9 @@
         <div class="product-catalog__item">
           <div class="product-catalog__wrapper">
             <picture class="img-mobile">
+              <source media="(min-width: 1440px)" srcset="../img/chicken-small-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="../img/chicken-small-tablet@1x.png">
-              <img src="img/chicken-small-mobile@1x.jpg" class="product-catalog__image product-catalog__image-small--tablet" width="140" height="144" alt="Cat energy pro 500 г">
+              <img src="img/chicken-small-mobile@1x.jpg" class="product-catalog__image product-catalog__image--small" width="140" height="144" alt="Cat energy pro 500 г">
             </picture>
             <div class="product-catalog__flex">
               <h3 class="product-catalog__title">Cat energy pro 500 г</h3>
@@ -79,8 +80,9 @@
         <div class="product-catalog__item">
           <div class="product-catalog__wrapper">
             <picture>
+              <source media="(min-width: 1440px)" srcset="../img/chicken-big-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="../img/chicken-big-tablet@1x.png">
-              <img src="img/chicken-big-mobile@1x.jpg" class="product-catalog__image product-catalog__image-big--tablet" width="140" height="144" alt="Cat energy pro 1000 г">
+              <img src="img/chicken-big-mobile@1x.jpg" class="product-catalog__image product-catalog__image--big" width="140" height="144" alt="Cat energy pro 1000 г">
             </picture>
             <div class="product-catalog__flex">
               <h3 class="product-catalog__title">Cat energy pro 1000 г</h3>
@@ -108,8 +110,9 @@
         <div class="product-catalog__item">
           <div class="product-catalog__wrapper">
             <picture>
+              <source media="(min-width: 1440px)" srcset="../img/fish-small-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="../img/fish-small-tablet@1x.png">
-              <img src="img/fish-small-mobile@1x.jpg" class="product-catalog__image product-catalog__image-small--tablet" width="140" height="144" alt="Cat energy pro 500 г">
+              <img src="img/fish-small-mobile@1x.jpg" class="product-catalog__image product-catalog__image--small" width="140" height="144" alt="Cat energy pro 500 г">
             </picture>
             <div class="product-catalog__flex">
               <h3 class="product-catalog__title">Cat energy pro 500 г</h3>
@@ -137,8 +140,9 @@
         <div class="product-catalog__item">
           <div class="product-catalog__wrapper">
             <picture>
+              <source media="(min-width: 1440px)" srcset="../img/fish-big-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="../img/fish-big-tablet@1x.png">
-              <img src="img/fish-big-mobile@1x.jpg" class="product-catalog__image product-catalog__image-big--tablet" width="140" height="144" alt="Cat energy pro 1000 г">
+              <img src="img/fish-big-mobile@1x.jpg" class="product-catalog__image product-catalog__image--big" width="140" height="144" alt="Cat energy pro 1000 г">
             </picture>
             <div class="product-catalog__flex">
               <h3 class="product-catalog__title">Cat energy pro 1000 г</h3>
@@ -166,8 +170,9 @@
         <div class="product-catalog__item">
           <div class="product-catalog__wrapper">
             <picture>
+              <source media="(min-width: 1440px)" srcset="../img/buckwheat-small-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="../img/buckwheat-small-tablet@1x.png">
-              <img src="img/buckwheat-small-mobile@1x.jpg" class="product-catalog__image product-catalog__image-small--tablet" width="140" height="144" alt="Cat energy slim 500 г">
+              <img src="img/buckwheat-small-mobile@1x.jpg" class="product-catalog__image product-catalog__image--small" width="140" height="144" alt="Cat energy slim 500 г">
             </picture>
             <div class="product-catalog__flex">
               <h3 class="product-catalog__title">Cat energy slim 500 г</h3>
@@ -195,8 +200,9 @@
         <div class="product-catalog__item">
           <div class="product-catalog__wrapper">
             <picture>
+              <source media="(min-width: 1440px)" srcset="../img/buckwheat-big-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="../img/buckwheat-big-tablet@1x.png">
-              <img src="img/buckwheat-big-mobile@1x.jpg" class="product-catalog__image product-catalog__image-big--tablet" width="140" height="144" alt="Cat energy slim 1000 г">
+              <img src="img/buckwheat-big-mobile@1x.jpg" class="product-catalog__image product-catalog__image--big" width="140" height="144" alt="Cat energy slim 1000 г">
             </picture>
             <div class="product-catalog__flex">
               <h3 class="product-catalog__title">Cat energy slim 1000 г</h3>
@@ -224,8 +230,9 @@
         <div class="product-catalog__item">
           <div class="product-catalog__wrapper">
             <picture>
+              <source media="(min-width: 1440px)" srcset="../img/rice-small-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="../img/rice-small-tablet@1x.png">
-              <img src="img/rice-small-mobile@1x.jpg" class="product-catalog__image product-catalog__image-small--tablet" width="140" height="144" alt="Cat energy slim 500 г">
+              <img src="img/rice-small-mobile@1x.jpg" class="product-catalog__image product-catalog__image--small" width="140" height="144" alt="Cat energy slim 500 г">
             </picture>
             <div class="product-catalog__flex">
               <h3 class="product-catalog__title">Cat energy slim 500 г</h3>
@@ -266,6 +273,7 @@
 
     <section class="additional-goods">
       <h2 class="additional-goods__main-title">Дополнительные товары</h2>
+      <div class="additional-goods__row">
       <div class="additional-goods__wrapper-flex">
 
         <div class="additional-goods__wrapper">
@@ -322,11 +330,17 @@
 
       </div>
 
+      <div class="special-offer">
+        <p class="special-offer__description">Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</p>
+      </div>
+
+    </div>
+
     </section>
 
-    <div class="special-offer">
+    <!-- <div class="special-offer">
       <p class="special-offer__description">Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</p>
-    </div>
+    </div> -->
 
   </main>
 

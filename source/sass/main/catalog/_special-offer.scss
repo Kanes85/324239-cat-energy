@@ -48,3 +48,22 @@
     text-align: left;
   }
 }
+
+@media (min-width: 1440px) {
+  .special-offer {
+    width: 245px;
+    height: 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    margin: 0;
+  }
+
+  .special-offer::after {
+    left: 96px;
+  }
+
+  .special-offer__description {
+    padding-top: 187px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

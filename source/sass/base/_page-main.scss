@@ -29,6 +29,11 @@
 @media (min-width: 1440px) {
   .page-main {
     width: 1440px;
+    margin: 0 auto;
   }
 
+  .page-main__title {
+    padding-left: 110px;
+    margin-top: 48px;
+  }
 }
