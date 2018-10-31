@@ -1,8 +1,8 @@
 .additional__target-label {
   @include font-regular;
   @include label;
-  padding-right: 10px;
   position: relative;
+  padding-right: 10px;
   padding-left: 47px;
 }
 
@@ -71,9 +71,9 @@
   }
 
   .additional__target-label {
+    padding-left: 60px;
     font-size: 20px;
     line-height: 20px;
-    padding-left: 60px;
   }
 
   .additional__target-label::before {
@@ -86,8 +86,8 @@
   .additional__wrapper {
     display: flex;
     flex-direction: row;
-    width: 633px;
     flex-wrap: wrap;
+    width: 633px;
     margin-bottom: 19px;
   }
 
@@ -98,5 +98,36 @@
 
   .additional__paragraph:nth-child(odd) {
     margin-right: 74px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additional {
+    width: 1220px;
+  }
+
+  .additional__title::after {
+    right: -1118px;
+    width: 1079px;
+  }
+
+  .additional__title::before {
+    left: -110px;
+    width: 70px;
+  }
+
+  .additional__wrapper {
+    justify-content: space-between;
+    width: 1220px;
+    margin-bottom: 25px;
+  }
+
+  .additional__paragraph:nth-child(1n) {
+    width: 230px;
+    margin-right: 16px;
+  }
+
+  .additional__target-label::before {
+    left: 1px;
   }
 }

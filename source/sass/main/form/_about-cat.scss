@@ -43,32 +43,24 @@
   width: 173px;
 }
 
-// .about-cat__data--error {
-//   border-color: red;
-// }
-
-// .about-cat__data:required:valid {
-//   border-color: red;
-// }
-
 @media (min-width: 768px) {
   .about-cat {
     margin-bottom: 56px;
   }
 
   .about-cat__data-label {
+    padding-right: 14px;
+    padding-left: 3px;
     font-size: 20px;
     line-height: 20px;
-    padding-left: 3px;
-    padding-right: 14px;
   }
 
   .about-cat__data {
+    box-sizing: border-box;
+    padding-bottom: 13px;
+    padding-left: 19px;
     font-size: 20px;
     line-height: 20px;
-    box-sizing: border-box;
-    padding-left: 19px;
-    padding-bottom: 13px;
   }
 
   .about-cat__data--name {
@@ -81,5 +73,29 @@
 
   .about-cat__data--age {
     width: 495px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-cat {
+    width: 570px;
+    margin: 0;
+  }
+
+  .about-cat__data--name {
+    width: 502px;
+    padding-left: 16px;
+  }
+
+  .about-cat__data--weight {
+    width: 474px;
+  }
+
+  .about-cat__data--age {
+    width: 432px;
+  }
+
+  .about-cat__paragraph:last-child {
+    margin-bottom: 0;
   }
 }

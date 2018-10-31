@@ -30,10 +30,10 @@
 
 .main-footer__cooperation-location {
   display: block;
-  color: #444444;
   width: 140px;
   margin: 0;
   line-height: 20px;
+  color: #444444;
 }
 
 .main-footer__map {
@@ -128,14 +128,14 @@
 }
 
 .main-footer__social-svg--vk {
-  margin-left: -2px;
   margin-bottom: 4px;
+  margin-left: -2px;
 }
 
 .main-footer__social-svg--fb {
-  margin-left: 4px;
   margin-top: -3px;
   margin-right: 7px;
+  margin-left: 4px;
 }
 
 .main-footer__developers {
@@ -179,11 +179,11 @@
   }
 
   .main-footer__cooperation-location {
-    color: #444444;
+    width: 195px;
     font-size: 16px;
     line-height: 20px;
-    width: 195px;
     text-align: right;
+    color: #444444;
   }
 
   .main-footer__cooperation-location-height {
@@ -222,13 +222,13 @@
   .main-footer__about-wrapper {
     display: flex;
     flex-direction: row;
-    width: 708px;
     justify-content: space-between;
-    text-align: center;
-    vertical-align: bottom;
+    width: 708px;
     height: 84px;
     margin: 0 auto;
     padding-top: 65px;
+    vertical-align: bottom;
+    text-align: center;
   }
 
   .main-footer__about-wrapper--shift {
@@ -276,6 +276,8 @@
     width: 14px;
     height: 28px;
     margin-top: -4px;
+    margin-right: 1px;
+    margin-left: -2px;
   }
 
   .main-footer__social-logo {
@@ -303,13 +305,13 @@
     position: absolute;
     top: 94px;
     left: 110px;
-    width: 570px;
-    min-height: 201px;
-    background-color: #ffffff;
     z-index: 50;
     justify-content: space-around;
     align-items: center;
+    width: 570px;
+    min-height: 201px;
     margin: 0;
+    background-color: #ffffff;
   }
 
   .main-footer__cooperation-invitation {
@@ -346,9 +348,9 @@
   }
 
   .main-footer__social-svg--fb {
-    margin-left: -2px;
     margin-top: -4px;
     margin-right: 1px;
+    margin-left: -2px;
   }
 
   .main-footer__about-wrapper--shift {

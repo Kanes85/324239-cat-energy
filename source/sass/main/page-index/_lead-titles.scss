@@ -7,14 +7,14 @@
 
 @media (min-width: 768px) {
   .lead-titles {
-    font-size: 60px;
-    margin-left: 30px;
     margin-bottom: 59px;
+    margin-left: 30px;
+    font-size: 60px;
   }
 }
 
 @media (min-width: 1440px) {
-    .lead-titles {
-      margin-left: 0;
-    }
+  .lead-titles {
+    margin-left: 0;
+  }
 }

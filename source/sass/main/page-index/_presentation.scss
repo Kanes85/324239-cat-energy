@@ -69,21 +69,21 @@
   }
 
   .presentation__title {
+    width: 420px;
+    margin-bottom: 41px;
+    margin-left: 87px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     color: #111111;
-    width: 420px;
-    margin-left: 87px;
-    margin-bottom: 41px;
   }
 
   .presentation__description {
-    color: #111111;
+    margin-bottom: 20px;
+    margin-left: 89px;
     font-size: 20px;
     line-height: 20px;
-    margin-left: 89px;
-    margin-bottom: 20px;
+    color: #111111;
   }
 
   .presentation::after {
@@ -95,11 +95,11 @@
   }
 
   .presentation__button {
-    font-size: 20px;
-    line-height: 20px;
     bottom: -4px;
     left: 88px;
     padding: 16px 27px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -113,8 +113,8 @@
   .presentation::before {
     content: "";
     position: absolute;
-    right: 0px;
-    top: 0px;
+    top: 0;
+    right: 0;
     width: 720px;
     height: 696px;
     background-color: #63a73a;
@@ -125,8 +125,8 @@
 
   .presentation::after {
     position: absolute;
-    left: 560px;
     top: 71px;
+    left: 560px;
     width: 660px;
     height: 640px;
     background-image: url("../img/index-can-desktop@1x.png");

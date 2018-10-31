@@ -9,8 +9,8 @@
 }
 
 .product-catalog__item {
-  border: 1px solid $background-color;
   border-collapse: collapse;
+  border: 1px solid $background-color;
 }
 
 .product-catalog__image {
@@ -56,28 +56,28 @@
 
 @media (min-width: 768px) {
   .product-catalog__wrapper-flex {
-    width: 768px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 768px;
     margin-bottom: 64px;
   }
 
   .product-catalog__item {
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
-    width: 324px;
+    justify-content: space-between;
     box-sizing: border-box;
-    background-color: #f2f2f2;
+    width: 324px;
     margin: 0 auto;
     margin-top: 139px;
-    padding: 0;
-    justify-content: space-between;
-    border: none;
-    margin-left: 30px;
     margin-right: 30px;
+    margin-left: 30px;
+    padding: 0;
+    background-color: #f2f2f2;
+    border: none;
   }
 
   .product-catalog__wrapper {
@@ -86,16 +86,16 @@
 
   .product-catalog__image--small {
     position: absolute;
-    left: 0;
     top: -46px;
+    left: 0;
     width: 323px;
     height: 175px;
   }
 
   .product-catalog__image--big {
     position: absolute;
-    left: 0;
     top: -80px;
+    left: 0;
     width: 323px;
     height: 207px;
   }
@@ -107,11 +107,11 @@
   }
 
   .product-catalog__title {
-    font-size: 20px;
     width: 130px;
-    text-align: center;
     margin: 0 auto;
     margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
   }
 
   .product-catalog__button {
@@ -135,22 +135,22 @@
 
   .product-catalog__item {
     width: 245px;
-    margin-left: 0;
-    margin-right: 0;
     margin-top: 140px;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .product-catalog__image--small {
-    left: 1px;
     top: -43px;
+    left: 1px;
     width: 242px;
     height: 172px;
   }
 
   .product-catalog__image--big {
     position: absolute;
-    left: 0;
     top: -80px;
+    left: 0;
     width: 244px;
     height: 208px;
   }
@@ -161,8 +161,8 @@
 
   .product-catalog__title {
     margin: 0;
-    margin-left: 21px;
     margin-bottom: 25px;
+    margin-left: 21px;
   }
 
   .product-catalog__button {

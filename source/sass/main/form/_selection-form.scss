@@ -9,9 +9,22 @@
 
 @media (min-width: 768px) {
   .selection-form__title {
-    font-size: 36px;
-    line-height: 36px;
     margin-bottom: 76px;
     margin-left: 2px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .selection-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin-bottom: 66px;
+  }
+
+  .selection-form__title {
+    margin-left: 0;
   }
 }

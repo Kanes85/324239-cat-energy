@@ -24,8 +24,8 @@
   }
 
   .site-list__item-link--active {
-    border-bottom: 2px solid $main_color;
     padding-bottom: 7px;
+    border-bottom: 2px solid $main_color;
   }
 }
 
@@ -36,6 +36,7 @@
     &:hover {
       color: rgba(255, 255, 255, 0.6);
     }
+
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }

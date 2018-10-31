@@ -15,14 +15,15 @@
 @media (min-width: 768px) {
   .page-main {
     width: 768px;
+    margin: 0 auto;
   }
 
   .page-main__title {
-    font-size: 60px;
-    line-height: 60px;
-    padding-left: 30px;
     margin-top: 33px;
     margin-bottom: 22px;
+    padding-left: 30px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -33,7 +34,7 @@
   }
 
   .page-main__title {
-    padding-left: 110px;
     margin-top: 48px;
+    padding-left: 110px;
   }
 }

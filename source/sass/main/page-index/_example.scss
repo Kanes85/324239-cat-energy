@@ -92,8 +92,8 @@
 @media (min-width: 768px) {
   .example {
     width: 768px;
-    background-color: #ffffff;
     margin-bottom: 9px;
+    background-color: #ffffff;
   }
 
   .example__wrapper {
@@ -109,8 +109,8 @@
 
   .example__description {
     width: 680px;
-    margin-left: 0;
     margin-bottom: 67px;
+    margin-left: 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -123,9 +123,9 @@
 
   .example-block__wrapper-item {
     display: flex;
+    justify-content: flex-start;
     width: 450px;
     margin: 0;
-    justify-content: flex-start;
   }
 
   .example-blok__item {
@@ -139,10 +139,10 @@
 
   .example-block__cost {
     width: 180px;
+    margin: 0;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
-    margin: 0;
   }
 
   .example-block__cost-height {
@@ -166,19 +166,19 @@
 
   .example-blok__weight-description,
   .example-blok__time-description {
-    background-color: #ffffff;
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
   }
 
   .example-blok__weight-description {
-    width: 119px;
     bottom: -30px;
+    width: 119px;
   }
 
   .example-blok__time-description {
-    width: 130px;
     bottom: -30px;
+    width: 130px;
   }
 }
 
@@ -190,9 +190,9 @@
   }
 
   .example__title {
-    padding-top: 0;
-    margin-left: 110px;
     margin-bottom: 75px;
+    margin-left: 110px;
+    padding-top: 0;
   }
 
   .example__row {
@@ -238,5 +238,4 @@
     display: inline;
     padding-left: 60px;
   }
-
 }
