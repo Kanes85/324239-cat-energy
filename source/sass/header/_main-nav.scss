@@ -5,11 +5,17 @@
   text-transform: uppercase;
 }
 
+
+
 .main-nav--closed {
   display: none;
 }
 
 .main-nav--opened {
+  display: block;
+}
+
+.main-nav--nojs {
   display: block;
 }
 

@@ -306,16 +306,21 @@
     top: 94px;
     left: 110px;
     z-index: 50;
-    justify-content: space-around;
-    align-items: center;
     width: 570px;
-    min-height: 201px;
     margin: 0;
     background-color: #ffffff;
   }
 
+  .main-footer__cooperation-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 59px;
+    margin-bottom: 58px;
+  }
+
   .main-footer__cooperation-invitation {
-    margin-top: 6px;
+    margin-top: 8px;
     margin-left: 22px;
   }
 
