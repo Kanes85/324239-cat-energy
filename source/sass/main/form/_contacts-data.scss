@@ -13,9 +13,9 @@
 }
 
 .contacts-data__field {
-  position: relative;
   @include font-regular;
   @include label;
+  position: relative;
   box-sizing: border-box;
   margin-bottom: 2px;
   padding-top: 10px;
