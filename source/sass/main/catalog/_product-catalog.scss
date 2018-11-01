@@ -17,11 +17,6 @@
   width: 140px;
 }
 
-.img-mobile {
-  width: 140px;
-  height: 145px;
-}
-
 .product-catalog__flex {
   width: 140px;
   height: 145px;
@@ -55,7 +50,7 @@
 }
 
 @media (min-width: 768px) {
-  .product-catalog__wrapper-flex {
+  .product-catalog__conteiner {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -127,7 +122,7 @@
 }
 
 @media (min-width: 1440px) {
-  .product-catalog__wrapper-flex {
+  .product-catalog__conteiner {
     width: 1220px;
     margin: 0 auto;
     margin-bottom: 73px;

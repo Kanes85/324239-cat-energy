@@ -14,9 +14,9 @@
     <!-- Cat Energy -->
     <a class="page-header__logo logo-image" href="index.html">
       <picture>
-        <source class="page-header__logo-image--tablet" media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-        <source class="page-header__logo-image--tablet" media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="195" height="45" alt="Логотип Cat Energy">
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="logo-image__picture" src="img/logo-mobile.svg" width="195" height="45" alt="Логотип Cat Energy">
       </picture>
     </a>
     <div class="control-menu">
@@ -45,11 +45,11 @@
     <section class="product-catalog">
       <h2 class="visually-hidden">Основные товары</h2>
 
-      <div class="product-catalog__wrapper-flex">
+      <div class="product-catalog__conteiner">
 
         <div class="product-catalog__item">
           <div class="product-catalog__wrapper">
-            <picture class="img-mobile">
+            <picture>
               <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
               <img src="img/chicken-small-mobile@1x.jpg" class="product-catalog__image product-catalog__image--small" width="140" height="144" alt="Cat energy pro 500 г">
@@ -456,6 +456,8 @@
     </section>
   </footer>
 
+
+  <script src="js/picturefill.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

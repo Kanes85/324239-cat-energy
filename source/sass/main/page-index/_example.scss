@@ -20,75 +20,6 @@
   margin-bottom: 38px;
 }
 
-.example-block__wrapper-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
-.example-blok__date {
-  @include font-regular;
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
-  border: 1px solid #e6e6e6;
-  border-radius: 4px;
-}
-
-.example-blok__weight,
-.example-blok__time {
-  position: relative;
-}
-
-.example-blok__weight-reduction {
-  padding-top: 8px;
-  padding-right: 43px;
-  padding-bottom: 10px;
-  padding-left: 41px;
-}
-
-.example-blok__weight-description {
-  position: absolute;
-  bottom: -42px;
-  left: 21px;
-  width: 80px;
-  font-size: 12px;
-  line-height: 12px;
-  text-align: center;
-  text-transform: lowercase;
-  background-color: $background-color;
-}
-
-.example-blok__time-day {
-  padding-top: 8px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-}
-
-.example-blok__time-description {
-  position: absolute;
-  bottom: -42px;
-  left: 16px;
-  width: 90px;
-  font-size: 12px;
-  line-height: 12px;
-  text-align: center;
-  text-transform: lowercase;
-  background-color: $background-color;
-}
-
-.example-block__cost {
-  @include font-regular;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 @media (min-width: 768px) {
   .example {
     width: 768px;
@@ -114,72 +45,6 @@
     font-size: 16px;
     line-height: 24px;
   }
-
-  .example-block__wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 708px;
-  }
-
-  .example-block__wrapper-item {
-    display: flex;
-    justify-content: flex-start;
-    width: 450px;
-    margin: 0;
-  }
-
-  .example-blok__item {
-    margin-right: 42px;
-  }
-
-  .example-blok__date {
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  .example-block__cost {
-    width: 180px;
-    margin: 0;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: right;
-  }
-
-  .example-block__cost-height {
-    display: block;
-    padding-top: 7px;
-  }
-
-  .example-blok__weight-reduction {
-    padding-top: 10px;
-    padding-right: 57px;
-    padding-bottom: 15px;
-    padding-left: 55px;
-  }
-
-  .example-blok__time-day {
-    padding-top: 10px;
-    padding-right: 29px;
-    padding-bottom: 15px;
-    padding-left: 29px;
-  }
-
-  .example-blok__weight-description,
-  .example-blok__time-description {
-    font-size: 14px;
-    line-height: 14px;
-    background-color: #ffffff;
-  }
-
-  .example-blok__weight-description {
-    bottom: -30px;
-    width: 119px;
-  }
-
-  .example-blok__time-description {
-    bottom: -30px;
-    width: 130px;
-  }
 }
 
 @media (min-width: 1440px) {
@@ -203,10 +68,6 @@
     background-color: #f2f2f2;
   }
 
-  .example-block__wrapper {
-    flex-direction: column;
-  }
-
   .example__wrapper {
     width: 433px;
     margin: 0;
@@ -217,25 +78,5 @@
     width: 433px;
     margin-top: 71px;
     margin-bottom: 83px;
-  }
-
-  .example-blok__weight-description {
-    bottom: -39px;
-    background-color: #f2f2f2;
-  }
-
-  .example-blok__time-description {
-    bottom: -39px;
-    background-color: #f2f2f2;
-  }
-
-  .example-block__cost {
-    width: 329px;
-    margin-top: 81px;
-  }
-
-  .example-block__cost-height {
-    display: inline;
-    padding-left: 60px;
   }
 }

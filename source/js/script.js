@@ -22,3 +22,34 @@ var navToggle = document.querySelector('.control-menu__btn');
           navToggle.classList.add('control-menu__close');
         }
       });
+
+
+
+
+
+// var form = document.querySelector('.selection-form');
+// var name = document.querySelector('.about-cat__data--name');
+// var submitBtn = document.querySelector('.submit-form__button');
+//
+// form.addEventListener('submit', function(evt) {
+//   if (name.value =="" || name.value ==" ") {
+//     // evt.preventDefault();
+//     name.classList.add('error');
+//   }
+// });
+
+
+
+
+// var form = popup.querySelector(".form-feedback");
+//   var name = popup.querySelector(".feed-name");
+//   var mail = popup.querySelector(".feed-mail");
+  // form.addEventListener("submit", function() {
+  //   if (name.value == "") {
+  //     // evt.preventDefault();
+  //     name.classList.remove("error");
+  //     name.offsetWidth = name.offsetWidth;
+  //     name.classList.add("error");
+  //     console.log("Не заполнены поля");
+  //   }
+  // });
