@@ -1,15 +1,15 @@
 .target-selection__target-label {
   @include font-regular;
   @include label;
-  padding-right: 10px;
   position: relative;
+  padding-right: 10px;
   padding-left: 46px;
 }
 
 .target-selection {
   box-sizing: border-box;
   width: 320px;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
   margin-left: -20px;
   padding-top: 22px;
   border: $border;
@@ -18,7 +18,7 @@
 .target-selection__target-label::before {
   content: "";
   position: absolute;
-  top: -2px;
+  top: -3px;
   left: 0;
   width: 28px;
   height: 28px;
@@ -30,18 +30,64 @@
 .target-selection__target:checked + .target-selection__target-label::before {
   background-color: $main_color;
   box-shadow: inset 0 0 0 8px #ffffff;
+  transition: 0.2s;
 }
 
 .target-selection__block-input {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 25px;
-
-  &:last-child {
-    margin-bottom: 22px;
-  }
+  margin-bottom: 23px;
 }
 
 .target-selection__target-label:active {
   opacity: 0.3;
+  transition: 0.15s;
+}
+
+@media (min-width: 768px) {
+  .target-selection {
+    width: 633px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+    padding-top: 34px;
+  }
+
+  .target-selection__block-input {
+    width: auto;
+    margin-bottom: 30px;
+    margin-left: 28px;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  .target-selection__target-label {
+    padding-left: 60px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .target-selection__target-label::before {
+    top: -7px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .target-selection__target:checked + .target-selection__target-label::before {
+    box-shadow: inset 0 0 0 11px #ffffff;
+  }
+}
+
+@media (min-width: 1440px) {
+  .target-selection {
+    width: 570px;
+    margin: 0;
+  }
+
+  .target-selection__target-label::before {
+    top: -6px;
+    left: -2px;
+  }
 }

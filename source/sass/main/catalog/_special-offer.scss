@@ -28,3 +28,42 @@
   text-align: center;
   color: #ffffff;
 }
+
+@media (min-width: 768px) {
+  .special-offer {
+    width: 708px;
+    height: 200px;
+    margin-bottom: 77px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .special-offer::after {
+    left: 91px;
+  }
+
+  .special-offer__description {
+    width: 170px;
+    margin-left: 423px;
+    padding-top: 72px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .special-offer {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .special-offer::after {
+    left: 96px;
+  }
+
+  .special-offer__description {
+    margin: 0 auto;
+    padding-top: 187px;
+    text-align: center;
+  }
+}

@@ -7,28 +7,24 @@
   line-height: 24px;
 }
 
-.selection-form__button {
-  @include button;
-  box-sizing: border-box;
-  width: 280px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 20px;
-
-  &:hover {
-    background-color: #5eaa2f;
-
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
+@media (min-width: 768px) {
+  .selection-form__title {
+    margin-bottom: 76px;
+    margin-left: 2px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
-.selection-form__important-information {
-  display: inline-block;
-  width: 280px;
-  margin-bottom: 32px;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
+@media (min-width: 1440px) {
+  .selection-form__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin-bottom: 66px;
+  }
+
+  .selection-form__title {
+    margin-left: 0;
+  }
 }

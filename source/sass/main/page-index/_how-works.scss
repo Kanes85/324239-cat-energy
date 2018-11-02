@@ -68,3 +68,126 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: 768px) {
+  .how-works {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 29px;
+    border-bottom: $border;
+  }
+
+  .how-works__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .how-works__wrapper-item {
+    position: relative;
+    width: 324px;
+    margin-bottom: 19px;
+  }
+
+  .how-works__wrapper-item:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .how-works__wrapper-item:nth-child(4) {
+    margin-bottom: 0;
+  }
+
+  .how-works__wrapper-item::after {
+    @include font-regular;
+    position: absolute;
+    top: -28px;
+    z-index: -50;
+    width: 134px;
+    height: 335px;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+  }
+
+  .how-works__wrapper-item--one::after {
+    content: "1";
+    right: 72px;
+  }
+
+  .how-works__wrapper-item--two::after {
+    content: "2";
+    right: 79px;
+  }
+
+  .how-works__wrapper-item--three::after {
+    content: "3";
+    right: 77px;
+  }
+
+  .how-works__wrapper-item--four::after {
+    content: "4";
+    right: 77px;
+  }
+
+  .how-works__item {
+    width: 245px;
+    margin-bottom: 100px;
+    padding-top: 109px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .how-works__item::before {
+    top: -3px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-right: 50px;
+  }
+
+  .how-works__item::after {
+    top: 22px;
+    left: 25px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .how-works {
+    width: 1220px;
+    margin-bottom: 7px;
+    border: none;
+  }
+
+  .how-works__wrapper {
+    justify-content: space-between;
+  }
+
+  .how-works__wrapper-item {
+    width: 245px;
+  }
+
+  .how-works__wrapper-item::after {
+    top: -27px;
+  }
+
+  .how-works__wrapper-item--one::after {
+    content: "1";
+    right: -8px;
+  }
+
+  .how-works__wrapper-item--two::after {
+    content: "2";
+    right: 0;
+  }
+
+  .how-works__wrapper-item--three::after {
+    content: "3";
+    right: -3px;
+  }
+
+  .how-works__wrapper-item--four::after {
+    content: "4";
+    right: -3px;
+  }
+}

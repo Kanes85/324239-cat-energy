@@ -11,7 +11,7 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 8px;
-  padding-top: 73px;
+  padding-top: 83px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -32,7 +32,9 @@
   @include button;
   box-sizing: border-box;
   width: 280px;
-  margin-left: 20px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
   color: #000000;
   background-color: #f2f2f2;
 
@@ -48,12 +50,74 @@
 .show-more::before {
   content: "";
   position: absolute;
-  top: 21px;
-  left: 145px;
+  top: 30px;
+  left: 144px;
   width: 30px;
   height: 30px;
-  font-size: 16px;
-  line-height: 20px;
   background-image: url("../img/icon-plus-mobile.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .show-more {
+    width: 324px;
+    margin-top: 140px;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    padding: 0;
+    padding-top: 165px;
+  }
+
+  .show-more__button {
+    width: 249px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .show-more::before {
+    top: 55px;
+    left: 132px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-plus.svg");
+  }
+
+  .show-more__view {
+    width: 175px;
+    margin-bottom: 26px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .show-more__description {
+    width: 200px;
+    margin-bottom: 86px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .show-more {
+    width: 245px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .show-more__button {
+    width: 169px;
+  }
+
+  .show-more::before {
+    top: 57px;
+    left: 92px;
+  }
+
+  .show-more__view {
+    margin-bottom: 27px;
+  }
 }

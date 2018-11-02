@@ -2,6 +2,7 @@
 @import "helpers/mixins";
 @import "base/typography";
 @import "base/general";
+@import "base/page-main";
 @import "header/page-header";
 @import "header/logo-image";
 @import "header/control-menu";
@@ -12,6 +13,7 @@
 @import "main/page-index/target";
 @import "main/page-index/how-works";
 @import "main/page-index/example";
+@import "main/page-index/example-blok";
 @import "main/page-index/slaider";
 @import "main/form/selection-label";
 @import "main/form/selection-form";
@@ -21,7 +23,7 @@
 @import "main/form/contacts-data";
 @import "main/form/text-box";
 @import "main/form/additional";
-@import "main/catalog/page-main";
+@import "main/form/submit-form";
 @import "main/catalog/product-catalog";
 @import "main/catalog/additional-good";
 @import "main/catalog/characteristics-goods";

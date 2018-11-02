@@ -1,0 +1,40 @@
+.page-main__title {
+  @include font-regular;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 26px;
+  padding-left: 20px;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.page-main__title--border {
+  padding-bottom: 2px;
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .page-main__title {
+    margin-top: 33px;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-main {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .page-main__title {
+    margin-top: 48px;
+    padding-left: 110px;
+  }
+}

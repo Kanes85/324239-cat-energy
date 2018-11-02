@@ -3,11 +3,52 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.main-nav--closed {
   display: none;
+}
+
+.main-nav--opened {
+  display: block;
+}
+
+.main-nav--nojs {
+  display: block;
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: block;
+    width: 480px;
+    margin: 21px auto;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-nav {
+    width: 513px;
+    margin-top: 23px;
+    margin-right: 93px;
+  }
+
+  .main-nav__list {
+    font-size: 20px;
+    color: #111111;
+  }
 }

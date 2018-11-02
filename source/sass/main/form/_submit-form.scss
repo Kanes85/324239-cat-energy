@@ -1,0 +1,60 @@
+.submit-form__button {
+  @include button;
+  box-sizing: border-box;
+  width: 280px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    background-color: #5eaa2f;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.submit-form__important-information {
+  display: inline-block;
+  width: 280px;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .submit-form {
+    display: flex;
+    width: 633px;
+    margin-bottom: 53px;
+  }
+
+  .submit-form__button {
+    width: 283px;
+    margin-right: 10px;
+    margin-left: 3px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 20px;
+  }
+
+  .submit-form__important-information {
+    padding-top: 16px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .submit-form {
+    width: 895px;
+    margin-bottom: 63px;
+  }
+
+  .submit-form__button {
+    width: 568px;
+    margin-right: 32px;
+    margin-left: 1px;
+  }
+}

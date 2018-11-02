@@ -1,4 +1,4 @@
-.page-header__logo {
+.logo-image {
   display: block;
   padding: 10px;
   padding-bottom: 5px;
@@ -6,12 +6,37 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
-.page-header__logo-image {
+.logo-image__picture {
   &:hover {
     opacity: 0.8;
 
     &:active {
       opacity: 0.6;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-image {
+    padding-top: 23px;
+    padding-right: 66px;
+    padding-left: 31px;
+    border: none;
+  }
+
+  .logo-image__picture {
+    width: 173px;
+    height: 58px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo-image {
+    margin-left: 79px;
+  }
+
+  .logo-image__picture {
+    width: 202px;
+    height: 59px;
   }
 }

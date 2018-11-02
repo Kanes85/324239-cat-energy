@@ -2,7 +2,7 @@
 .control-menu__hamburger {
   position: absolute;
   top: 23px;
-  right: 20px;
+  right: -3px;
   width: 24px;
   height: 18px;
   background-color: transparent;
@@ -10,13 +10,20 @@
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 // Крест закрывающий меню
 .control-menu__close {
   position: absolute;
   top: 23px;
-  right: 20px;
+  right: -3px;
   width: 18px;
   height: 18px;
   background-color: transparent;
@@ -24,4 +31,21 @@
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.control-menu__btn {
+  width: 70px;
+}
+
+@media (min-width: 768px) {
+  .control-menu {
+    display: none;
+  }
 }

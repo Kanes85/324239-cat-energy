@@ -4,10 +4,17 @@ body {
   padding: 0;
 }
 
-// img {
-//   max-width: 100%;
-//   height: auto;
-// }
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+}
 
 .visually-hidden {
   position: absolute;

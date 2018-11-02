@@ -20,72 +20,63 @@
   margin-bottom: 38px;
 }
 
-.example-block__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 280px;
-  margin: 0 auto;
-  margin-bottom: 50px;
+@media (min-width: 768px) {
+  .example {
+    width: 768px;
+    margin-bottom: 9px;
+    background-color: #ffffff;
+  }
+
+  .example__wrapper {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .example__title {
+    width: 100%;
+    margin-bottom: 65px;
+    margin-left: 30px;
+  }
+
+  .example__description {
+    width: 680px;
+    margin-bottom: 67px;
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
-.example-blok__date {
-  @include font-regular;
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
-  border: 1px solid #e6e6e6;
-  border-radius: 4px;
-}
+@media (min-width: 1440px) {
+  .example {
+    width: 1440px;
+    margin: 0;
+    border: none;
+  }
 
-.example-blok__weight,
-.example-blok__time {
-  position: relative;
-}
+  .example__title {
+    margin-bottom: 75px;
+    margin-left: 110px;
+    padding-top: 0;
+  }
 
-.example-blok__weight-reduction {
-  padding-top: 8px;
-  padding-right: 43px;
-  padding-bottom: 10px;
-  padding-left: 41px;
-}
+  .example__row {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+  }
 
-.example-blok__weight-description {
-  position: absolute;
-  bottom: -42px;
-  left: 21px;
-  width: 80px;
-  font-size: 12px;
-  line-height: 12px;
-  text-align: center;
-  text-transform: lowercase;
-  background-color: $background-color;
-}
+  .example__wrapper {
+    width: 433px;
+    margin: 0;
+    margin-left: 110px;
+  }
 
-.example-blok__time-day {
-  padding: 10px 20px 10px 20px;
-  padding-top: 8px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-}
-
-.example-blok__time-description {
-  position: absolute;
-  bottom: -42px;
-  left: 16px;
-  width: 90px;
-  font-size: 12px;
-  line-height: 12px;
-  text-align: center;
-  text-transform: lowercase;
-  background-color: $background-color;
-}
-
-.example-block__cost {
-  @include font-regular;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
+  .example__description {
+    width: 433px;
+    margin-top: 71px;
+    margin-bottom: 83px;
+  }
 }
