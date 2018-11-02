@@ -27,7 +27,8 @@
   }
 
   &:focus {
-    outline: 2px solid #444444;
+    outline: none;
+    border: 2px solid #444444;
   }
 }
 
@@ -43,9 +44,10 @@
   width: 172px;
 }
 
-// .error {
-//   border-color: red;
-// }
+.about-cat__data--required:focus:invalid {
+  outline: none;
+  border: 2px solid #ff8282;
+}
 
 @media (min-width: 768px) {
   .about-cat {
