@@ -53,6 +53,11 @@
   height: 145px;
 }
 
+.product-catalog__goods-link {
+  text-decoration: none;
+  color: #111111;
+}
+
 @media (min-width: 768px) {
   .product-catalog__conteiner {
     display: flex;
