@@ -9,6 +9,14 @@
   background-position: 0 0;
 }
 
+@media (min-width: 320px) and (min-resolution: 144dpi),
+       (min-width: 320px) and (min-resolution: 1.5dppx) {
+        .presentation {
+          background-image: url("../img/index-background-mobile@2x.jpg");
+          background-size: 320px auto;
+        }
+}
+
 .presentation::after {
   content: "";
   display: block;
@@ -18,6 +26,14 @@
   background-repeat: no-repeat;
   background-position: 20px 2px;
 }
+
+@media (min-width: 320px) and (min-resolution: 144dpi),
+       (min-width: 320px) and (min-resolution: 1.5dppx) {
+         .presentation::after {
+           background-image: url("../img/index-can-mobile@2x.png");
+           background-size: 280px auto;
+         }
+       }
 
 .presentation__title {
   @include font-regular;
@@ -91,7 +107,7 @@
     height: 609px;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: 0;
-    background-size: 708px 608px;
+    background-size: 708px auto; /*608px*/
   }
 
   .presentation__button {

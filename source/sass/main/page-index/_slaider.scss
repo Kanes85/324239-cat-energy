@@ -23,6 +23,8 @@
 }
 
 .slaider__image {
+  width: 320px;
+  height: 240px;
   margin-bottom: 60px;
 }
 
@@ -96,7 +98,7 @@
     display: block;
   }
 
-  .slaider__image-before-tablet {
+  .slaider__image-before {
     position: absolute;
     top: -186px;
     left: 47px;
@@ -105,7 +107,7 @@
     clip: rect(auto, 337px, auto, auto);
   }
 
-  .slaider__image-after-tablet {
+  .slaider__image-after {
     position: absolute;
     top: -186px;
     left: 49px;
@@ -196,13 +198,13 @@
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 
-  .slaider__image-before-desktop {
+  .slaider__image-before {
     top: -207px;
     left: 31px;
     clip: rect(auto, 364px, auto, auto);
   }
 
-  .slaider__image-after-desktop {
+  .slaider__image-after {
     top: -208px;
     left: 32px;
     clip: rect(auto, auto, auto, 362px);
