@@ -70,7 +70,7 @@
 }
 
 @media (min-width: 320px) and (min-resolution: 144dpi),
-       (min-width: 320px) and (min-resolution: 1.5dppx) {
+        (min-width: 320px) and (min-resolution: 1.5dppx) {
           .how-works__item--materials-image::after {
             background-image: url("../img/advantage-leaf@2x.png");
             background-size: 50px auto;
@@ -90,7 +90,7 @@
             background-image: url("../img/advantage-clock@2x.png");
             background-size: 100px auto;
           }
-       }
+        }
 
 
 @media (min-width: 768px) {
@@ -145,11 +145,13 @@
 
   .how-works__wrapper-item--three::after {
     content: "3";
+    top: -25px;
     right: 77px;
   }
 
   .how-works__wrapper-item--four::after {
     content: "4";
+    top: -25px;
     right: 77px;
   }
 
@@ -163,7 +165,7 @@
   }
 
   .how-works__item::before {
-    top: -3px;
+    top: -2px;
     left: 0;
     width: 80px;
     height: 80px;
@@ -171,7 +173,7 @@
   }
 
   .how-works__item::after {
-    top: 22px;
+    top: 24px;
     left: 25px;
   }
 }

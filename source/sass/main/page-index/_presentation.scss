@@ -20,16 +20,16 @@
 }
 
 @media (min-width: 320px) and (min-resolution: 144dpi),
-       (min-width: 320px) and (min-resolution: 1.5dppx) {
-         .presentation {
-           background-image: url("../img/index-background-mobile@2x.jpg");
-           background-size: 320px auto;
-         }
+        (min-width: 320px) and (min-resolution: 1.5dppx) {
+          .presentation {
+            background-image: url("../img/index-background-mobile@2x.jpg");
+            background-size: 320px auto;
+          }
 
-         .presentation::after {
-           background-image: url("../img/index-can-mobile@2x.png");
-           background-size: 280px auto;
-         }
+          .presentation::after {
+            background-image: url("../img/index-can-mobile@2x.png");
+            background-size: 280px auto;
+          }
 }
 
 .presentation__title {
@@ -108,10 +108,10 @@
   }
 
   @media (min-width: 768px) and (min-resolution: 144dpi),
-         (min-width: 768px) and (min-resolution: 1.5dppx) {
-           .presentation::after {
-             background-image: url("../img/index-can-tablet@2x.jpg");
-             background-size: 708px auto;
+          (min-width: 768px) and (min-resolution: 1.5dppx) {
+            .presentation::after {
+              background-image: url("../img/index-can-tablet@2x.jpg");
+              background-size: 708px auto;
             }
   }
 
@@ -155,7 +155,7 @@
   }
 
   @media (min-width: 1440px) and (min-resolution: 144dpi),
-         (min-width: 1440px) and (min-resolution: 1.5dppx) {
+          (min-width: 1440px) and (min-resolution: 1.5dppx) {
           .presentation::before {
             background-image: url("../img/index-background-desktop@2x.jpg");
             background-size: 720px auto;

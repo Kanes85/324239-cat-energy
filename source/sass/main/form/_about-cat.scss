@@ -38,10 +38,12 @@
 
 .about-cat__data--weight {
   width: 206px;
+  padding-left: 17px;
 }
 
 .about-cat__data--age {
   width: 172px;
+  padding-left: 16px;
 }
 
 .about-cat__data--required:focus:invalid {
@@ -99,6 +101,7 @@
 
   .about-cat__data--age {
     width: 432px;
+    padding-left: 15px;
   }
 
   .about-cat__paragraph:last-child {
