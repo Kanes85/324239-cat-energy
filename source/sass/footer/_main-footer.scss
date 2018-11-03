@@ -20,6 +20,12 @@
   margin-bottom: 26px;
 }
 
+.main-footer__cooperation-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
 .main-footer__cooperation-invitation {
   @include font-regular;
   width: 140px;
