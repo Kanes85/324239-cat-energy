@@ -45,6 +45,7 @@
 .main-footer__map {
   position: relative;
   width: 320px;
+  height: 362px;
   margin: 0;
   padding: 0;
 }
@@ -92,7 +93,7 @@
 }
 
 .main-footer__logo {
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   padding-top: 40px;
   text-align: center;
 }
@@ -170,6 +171,7 @@
 @media (min-width: 768px) {
   .main-footer {
     width: 768px;
+    margin: 0 auto;
   }
 
   .main-footer__cooperation {
@@ -211,16 +213,21 @@
   }
 
   .main-footer__date {
-    padding-bottom: 147px;
+    padding-bottom: 34px;
+  }
+
+  .main-footer__about--shift {
+    padding-bottom: 34px;
   }
 
   .main-footer__map {
     width: 768px;
+    height: 362px;
   }
 
   .main-footer__map-image {
     width: 768px;
-    height: 397px;
+    height: 396px;
   }
 
   .main-footer__map::before {
@@ -302,14 +309,15 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .main-footer {
-    width: 1440px;
+    width: 100%;
+    background-color: #f2f2f2;
   }
 
   .main-footer__date {
     position: relative;
-    width: 1440px;
+    width: 100%;
     min-height: 399px;
     padding: 0;
   }
@@ -318,7 +326,7 @@
     position: absolute;
     top: 94px;
     left: 110px;
-    z-index: 50;
+    z-index: 100;
     width: 570px;
     margin: 0;
     background-color: #ffffff;
@@ -328,7 +336,7 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin-top: 59px;
+    margin-top: 58px;
     margin-bottom: 58px;
   }
 
@@ -344,21 +352,32 @@
   }
 
   .main-footer__map-image {
-    width: 1440px;
+    width: 100vw;
+    height: 399px;
+  }
+
+  .main-footer__map {
+    width: 100%;
+    height: 399px;
+  }
+
+  .main-footer__map-live {
     height: 399px;
   }
 
   .main-footer__map::before {
     top: 150px;
     left: 993px;
+    background: none;
   }
 
   .main-footer__about {
-    width: 1440px;
+    width: 1300px;
   }
 
   .main-footer__about-wrapper {
     width: 1220px;
+    padding-top: 64px;
   }
 
   .main-footer__logo-image {

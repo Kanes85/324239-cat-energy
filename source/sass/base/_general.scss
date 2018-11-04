@@ -10,13 +10,14 @@ body {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   body {
-    width: 1440px;
+    width: 100%;
+    // overflow-y: hidden;
   }
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

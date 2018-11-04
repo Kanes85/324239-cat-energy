@@ -41,8 +41,12 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .program-selection {
     width: 1220px;
+  }
+
+  .program-selection__task {
+    padding-left: 0;
   }
 }

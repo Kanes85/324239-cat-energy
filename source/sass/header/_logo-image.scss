@@ -9,9 +9,7 @@
 .logo-image__picture {
   width: 195px;
   height: 45px;
-}
 
-.logo-image__picture {
   &:hover {
     opacity: 0.8;
 
@@ -35,9 +33,10 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .logo-image {
-    margin-left: 79px;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .logo-image__picture {

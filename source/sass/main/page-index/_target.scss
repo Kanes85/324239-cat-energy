@@ -113,6 +113,11 @@
 }
 
 @media (min-width: 768px) {
+  .target {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   .target__item {
     width: 708px;
     margin: 0 auto;
@@ -198,9 +203,9 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .target {
-    width: 1440px;
+    width: 1220px;
   }
 
   .target__wrapper {
@@ -209,7 +214,7 @@
     justify-content: space-between;
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 74px;
+    margin-bottom: 75px;
   }
 
   .target__item {

@@ -135,7 +135,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example-block__wrapper {
     flex-direction: column;
   }
@@ -153,6 +153,7 @@
   .example-block__cost {
     width: 330px;
     margin-top: 81px;
+    margin-left: -2px;
   }
 
   .example-block__cost-height {
