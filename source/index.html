@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
@@ -14,9 +13,10 @@
 
   <header class="page-header">
     <!-- Cat Energy -->
+    <div class="page-header__conteiner page-header__conteiner--background">
     <div class="page-header__logo logo-image">
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img class="logo-image__picture" src="img/logo-mobile.svg" width="195" height="45" alt="Логотип Cat Energy">
       </picture>
@@ -39,6 +39,7 @@
         </li>
       </ul>
     </nav>
+  </div>
   </header>
 
   <main class="page-main">
@@ -94,22 +95,22 @@
 
     <section class="example">
       <h2 class="example__title lead-titles">Живой пример</h2>
-
       <div class="example__row">
+        <div class="example__conteiner">
         <div class="example__wrapper">
 
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
           <div class="example-block__wrapper">
             <div class="example-block__wrapper-item">
-              <div class="example-blok__weight example-blok__item">
-                <b class="example-blok__weight-reduction example-blok__date">5 кг</b>
-                <p class="example-blok__weight-description">Снижение веса</p>
+              <div class="example-block__weight example-block__item">
+                <b class="example-block__weight-reduction example-block__date">5 кг</b>
+                <p class="example-block__weight-description">Снижение веса</p>
               </div>
 
-              <div class="example-blok__time example-blok__item">
-                <b class="example-blok__time-day example-blok__date">60 дней</b>
-                <p class="example-blok__time-description">Затрачено времени</p>
+              <div class="example-block__time example-block__item">
+                <b class="example-block__time-day example-block__date">60 дней</b>
+                <p class="example-block__time-description">Затрачено времени</p>
               </div>
             </div>
             <p class="example-block__cost">Затраты на питание:
@@ -131,33 +132,34 @@
           <ul class="slaider__wrapper">
             <li class="slaider__item slaider__item--before">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/before-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                <img class="slaider__image slaider__image-before-tablet
-                slaider__image-before-desktop" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот до начала программы">
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="slaider__image slaider__image-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"  alt="Кот до начала программы">
               </picture>
             </li>
             <li class="slaider__item slaider__item--after">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/after-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                <img class="slaider__image slaider__image-after-tablet slaider__image-after-desktop" src="img/after-mobile@1x.png" width="320" height="240" alt="Кот после прохождения программы">
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="slaider__image slaider__image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"  alt="Кот после прохождения программы">
               </picture>
             </li>
           </ul>
 
         </div>
       </div>
+    </div>
+
 
     </section>
   </main>
 
   <footer class="main-footer">
 
-    <section class="main-footer__date">
+    <section class="main-footer__date main-footer__about--shift">
       <h2 class="visually-hidden">Сотрудничество и наш адрес</h2>
 
-      <div class="main-footer__cooperation main-footer__cooperation--shift">
+      <div class="main-footer__cooperation">
         <div class="main-footer__cooperation-item">
           <b class="main-footer__cooperation-invitation">Приглашаем к&nbsp;сотрудничеству дилеров!</b>
           <p class="main-footer__cooperation-location">ул. Большая Конюшенная, д. 19/8 <span class="main-footer__cooperation-location-height">Санкт-Петербург</span>
@@ -167,11 +169,11 @@
 
       <!-- КАРТА -->
       <div class="main-footer__map">
-        <!-- <iframe class="main-footer__map-live" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716664674!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1539736529867" width="320" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <iframe class="main-footer__map-live" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716664674!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1539736529867" width="100%" height="362" style="border:0" allowfullscreen></iframe>
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-          <img class="main-footer__map-image" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="main-footer__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
 
       </div>
@@ -270,8 +272,8 @@
     </section>
   </footer>
 
-<script src="js/picturefill.min.js"></script>
-<script src="js/script.js"></script>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

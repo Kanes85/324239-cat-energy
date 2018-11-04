@@ -35,14 +35,18 @@
     width: 387px;
     margin-top: 55px;
     margin-bottom: 66px;
-    padding-left: 1px;
+    padding-left: 3px;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .program-selection {
     width: 1220px;
+  }
+
+  .program-selection__task {
+    padding-left: 0;
   }
 }

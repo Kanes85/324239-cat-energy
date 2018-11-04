@@ -113,6 +113,11 @@
 }
 
 @media (min-width: 768px) {
+  .target {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   .target__item {
     width: 708px;
     margin: 0 auto;
@@ -140,27 +145,17 @@
   }
 
   .target__title--slim-image::after {
-    content: "";
-    position: absolute;
     top: 79px;
     left: 476px;
     width: 140px;
     height: 194px;
-    background-image: url("../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   .target__title--mass-image::after {
-    content: "";
-    position: absolute;
     top: 134px;
     left: 412px;
     width: 268px;
     height: 112px;
-    background-image: url("../img/icon-cat-pro.svg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   .target__description {
@@ -208,9 +203,9 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .target {
-    width: 1440px;
+    width: 1220px;
   }
 
   .target__wrapper {
@@ -219,7 +214,7 @@
     justify-content: space-between;
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 74px;
+    margin-bottom: 75px;
   }
 
   .target__item {

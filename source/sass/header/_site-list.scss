@@ -29,7 +29,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .site-list__item-link--white {
     color: #ffffff;
 
@@ -44,5 +44,10 @@
 
   .site-list__item-link--white-active {
     border-color: #ffffff;
+  }
+
+  .site-list__item {
+    display: block;
+    margin-left: 35px;
   }
 }

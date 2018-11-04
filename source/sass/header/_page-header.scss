@@ -3,7 +3,7 @@
 }
 
 @media (min-width: 768px) {
-  .page-header {
+  .page-header__conteiner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,13 +12,35 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .page-header {
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  .page-header__conteiner {
+    width: 1220px;
+    margin: 0 auto;
     z-index: 50;
     display: flex;
     justify-content: space-between;
-    width: 1440px;
-    margin: 0 auto;
-    margin-top: 31px;
+    padding-top: 31px;
+  }
+
+  .page-header__conteiner--background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 696px;
+    margin: 0;
+    background-color: #65a93c;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
   }
 }

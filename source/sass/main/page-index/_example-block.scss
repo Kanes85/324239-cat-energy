@@ -7,7 +7,7 @@
   margin-bottom: 50px;
 }
 
-.example-blok__date {
+.example-block__date {
   @include font-regular;
   font-size: 24px;
   line-height: 24px;
@@ -16,19 +16,19 @@
   border-radius: 4px;
 }
 
-.example-blok__weight,
-.example-blok__time {
+.example-block__weight,
+.example-block__time {
   position: relative;
 }
 
-.example-blok__weight-reduction {
+.example-block__weight-reduction {
   padding-top: 8px;
   padding-right: 43px;
   padding-bottom: 10px;
   padding-left: 41px;
 }
 
-.example-blok__weight-description {
+.example-block__weight-description {
   position: absolute;
   bottom: -42px;
   left: 21px;
@@ -40,14 +40,14 @@
   background-color: $background-color;
 }
 
-.example-blok__time-day {
+.example-block__time-day {
   padding-top: 8px;
   padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px;
 }
 
-.example-blok__time-description {
+.example-block__time-description {
   position: absolute;
   bottom: -42px;
   left: 16px;
@@ -81,11 +81,11 @@
     margin: 0;
   }
 
-  .example-blok__item {
+  .example-block__item {
     margin-right: 42px;
   }
 
-  .example-blok__date {
+  .example-block__date {
     font-size: 30px;
     line-height: 37px;
   }
@@ -103,49 +103,49 @@
     padding-top: 7px;
   }
 
-  .example-blok__weight-reduction {
+  .example-block__weight-reduction {
     padding-top: 10px;
     padding-right: 57px;
     padding-bottom: 15px;
     padding-left: 55px;
   }
 
-  .example-blok__time-day {
+  .example-block__time-day {
     padding-top: 10px;
     padding-right: 29px;
     padding-bottom: 15px;
     padding-left: 29px;
   }
 
-  .example-blok__weight-description,
-  .example-blok__time-description {
+  .example-block__weight-description,
+  .example-block__time-description {
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
   }
 
-  .example-blok__weight-description {
+  .example-block__weight-description {
     bottom: -30px;
     width: 119px;
   }
 
-  .example-blok__time-description {
+  .example-block__time-description {
     bottom: -30px;
     width: 130px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example-block__wrapper {
     flex-direction: column;
   }
 
-  .example-blok__weight-description {
+  .example-block__weight-description {
     bottom: -39px;
     background-color: #f2f2f2;
   }
 
-  .example-blok__time-description {
+  .example-block__time-description {
     bottom: -39px;
     background-color: #f2f2f2;
   }
@@ -153,6 +153,7 @@
   .example-block__cost {
     width: 330px;
     margin-top: 81px;
+    margin-left: -2px;
   }
 
   .example-block__cost-height {

@@ -19,6 +19,19 @@
   background-position: 20px 2px;
 }
 
+@media (min-width: 320px) and (min-resolution: 144dpi),
+  (min-width: 320px) and (min-resolution: 1.5dppx) {
+  .presentation {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  .presentation::after {
+    background-image: url("../img/index-can-mobile@2x.png");
+    background-size: 280px auto;
+  }
+}
+
 .presentation__title {
   @include font-regular;
   display: inline-block;
@@ -91,7 +104,15 @@
     height: 609px;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: 0;
-    background-size: 708px 608px;
+    background-size: 708px auto;
+  }
+
+  @media (min-width: 768px) and (min-resolution: 144dpi),
+    (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .presentation::after {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 708px auto;
+    }
   }
 
   .presentation__button {
@@ -103,48 +124,47 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .presentation {
-    width: 1440px;
+    width: 1220px;
     margin-top: -140px;
-    margin-bottom: 472px;
+    margin-bottom: 489px;
   }
 
-  .presentation::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 720px;
-    height: 696px;
-    background-color: #63a73a;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-  }
 
   .presentation::after {
     position: absolute;
-    top: 71px;
-    left: 560px;
+    top: 89px;
+    left: 450px;
     width: 660px;
     height: 640px;
     background-image: url("../img/index-can-desktop@1x.png");
-    background-size: 552px 499px;
+    background-size: 552px auto;
+  }
+
+  @media (min-width: 1300px) and (min-resolution: 144dpi),
+    (min-width: 1300px) and (min-resolution: 1.5dppx) {
+    .presentation::before {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
+
+    .presentation::after {
+      background-image: url("../img/index-can-desktop@2x.png");
+    }
   }
 
   .presentation__title {
-    margin-top: 222px;
-    margin-left: 190px;
+    margin-top: 241px;
+    margin-left: 80px;
   }
 
   .presentation__description {
-    margin-left: 190px;
+    margin-left: 80px;
   }
 
   .presentation__button {
-    bottom: -203px;
-    left: 190px;
-    z-index: 100;
+    bottom: -221px;
+    left: 79px;
   }
 }

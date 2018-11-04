@@ -11,7 +11,7 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 8px;
-  padding-top: 83px;
+  padding-top: 80px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -50,7 +50,7 @@
 .show-more::before {
   content: "";
   position: absolute;
-  top: 30px;
+  top: 27px;
   left: 144px;
   width: 30px;
   height: 30px;
@@ -101,7 +101,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .show-more {
     width: 245px;
     margin-right: 0;
