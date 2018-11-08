@@ -15,6 +15,9 @@ var sprite = require("gulp-svgstore"); //Сборка SVG-спрайтов
 var posthtml = require("gulp-posthtml"); //PostHTML
 var include = require("posthtml-include"); //Преобразование тега include в SVG код в HTML
 var del = require("del"); //Удаление файлов (очистка папки)
+var htmlmin = require("gulp-htmlmin"); //Минификация HTML
+var jsmin = require("gulp-uglify"); //Минификация JS
+
 
 // Преобразование стилей из SCSS в CSS, автопрефексер, минификация
 gulp.task("css", function () {
@@ -31,6 +34,21 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+// Минификация HTML
+gulp.task("minify", function () {
+  return gulp.src("build/*.html") //Выбор всех HTML файлов для обработки
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build")); //запись результатов в папку build
+  });
+
+// Минификация JavaScript
+gulp.task("jsmini", function () {
+  return gulp.src("source/js/script.js") //Выбор файла script.js для обработки
+    .pipe(jsmin())
+    .pipe(rename("script.min.js")) //Переименование результирующего файла в script.min.js
+    .pipe(gulp.dest("build/js")); //Запись результата в паку build
+});
+
 // Оптимизация изображений
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}") //Выбор всех файлов для обработки с расширениями png, jpg, svg
@@ -45,7 +63,7 @@ gulp.task("images", function () {
 // Конвертация изображений в WebP
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}") //Выброр всех изображений для обработки с расширениеями png и jpg
-    .pipe(webp({quality: 90})) //Конвертация выбранных изображений в формат WebP с качеством 90%
+    .pipe(webp({quality: 80})) //Конвертация выбранных изображений в формат WebP с качеством 80%
     .pipe(gulp.dest("source/img")); //Запись результатов в папку img
 })
 
@@ -70,7 +88,7 @@ gulp.task("html", function () {
 
 //Удаляет папку build для последуещего создания новой версии
 gulp.task("clean", function () {
-  return del("build");
+  return del("build"); //Удаляет папку build
 });
 
 // Запуск копирования необходимого содержимого содержимого в папку build
@@ -78,7 +96,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2,eot}", //Вибирает для копирования шрифты с указанным форматом
     "source/img/**", //Вибирает для копирования все изображения в папке img
-    "source/js/**" //Вибирает для копирования все JS файлы в папке js
+    "source/js/*.min.js" //Вибирает для копирования все JS файлы с min.js в названии, в папке js
   ], {
     base: "source" //Базовая папка, указывается для того что бы при копировании сохранить внутреннию систему папок
   })
@@ -103,11 +121,12 @@ gulp.task("server", function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/sprite-*.svg", gulp.series("sprite", "html", "reload"));
-  gulp.watch("source/*.html", gulp.series("html", "reload"));
+  gulp.watch("source/js/*.js", gulp.series("jsmini", "reload"));
+  gulp.watch("source/*.html", gulp.series("html", "minify", "reload"));
 });
 
 // Сборка CSS, SVG-спрайтов, вставка SVG в include HTML
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "minify", "jsmini"));
 
 // Сборка CSS из SCSS и запуск локального сервера
 gulp.task("start", gulp.series("build", "server"));
