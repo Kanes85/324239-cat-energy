@@ -200,13 +200,6 @@
     background: linear-gradient(to right, #f2f2f2 58%, #eaeaea 42%);
   }
 
-  // Стиль для IE 11
-  @media (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width : 1300px) {
-    .slaider {
-      margin-left: 160px;
-    }
-  }
-
   .slaider__image-before {
     top: -190px;
     left: 31px;
@@ -240,5 +233,12 @@
   .slider__switch {
     bottom: -380px;
     left: 179px;
+  }
+}
+
+// Стиль для IE 11
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1300px) {
+  .slaider {
+    margin-left: 160px;
   }
 }
