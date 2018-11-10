@@ -22,8 +22,8 @@
 
 .main-footer__cooperation-item {
   display: flex;
-  width: 100%;
   justify-content: space-around;
+  width: 100%;
 }
 
 .main-footer__cooperation-invitation {
@@ -54,9 +54,9 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 5;
   width: 320px;
   height: 362px;
-  z-index: 5;
 }
 
 .main-footer__map::before {
@@ -189,8 +189,8 @@
   }
 
   .main-footer__cooperation-item {
-    width: 768px;
     justify-content: space-between;
+    width: 768px;
   }
 
   .main-footer__cooperation-invitation {
@@ -222,8 +222,8 @@
   }
 
   .main-footer__about--shift {
-    padding-bottom: 34px;
     padding-top: 0;
+    padding-bottom: 34px;
   }
 
   .main-footer__map {
@@ -237,6 +237,7 @@
   }
 
   .main-footer__map-live {
+    width: 100%;
     height: 396px;
   }
 
@@ -344,8 +345,8 @@
 
   .main-footer__cooperation-item {
     display: flex;
-    width: 100%;
     justify-content: space-around;
+    width: 100%;
     margin-top: 58px;
     margin-bottom: 58px;
   }
@@ -363,6 +364,7 @@
 
   .main-footer__map-image {
     width: 100vw;
+    max-width: 100%;
     height: 399px;
   }
 
@@ -372,6 +374,7 @@
   }
 
   .main-footer__map-live {
+    width: 100%;
     height: 399px;
   }
 

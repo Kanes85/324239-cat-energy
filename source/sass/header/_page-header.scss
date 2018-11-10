@@ -14,18 +14,18 @@
 
 @media (min-width: 1300px) {
   .page-header {
+    position: relative;
     width: 100vw;
     max-width: 100%;
     margin: 0;
-    position: relative;
   }
 
   .page-header__conteiner {
-    width: 1220px;
-    margin: 0 auto;
     z-index: 50;
     display: flex;
     justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
     padding-top: 31px;
   }
 

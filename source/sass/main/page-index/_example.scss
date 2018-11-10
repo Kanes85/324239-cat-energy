@@ -50,13 +50,9 @@
 
 @media (min-width: 1300px) {
   .example {
-    // width: 100vw;
-    // max-width: 100%;
-    // min-width: 1300px;
     width: 100%;
-    // margin: 0 auto;
-    border: none;
     margin-bottom: 0;
+    border: none;
   }
 
   .example__title {
@@ -71,15 +67,14 @@
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    // background-color: #f2f2f2;
     background: linear-gradient(to right, #f2f2f2 70%, #eaeaea 30%);
   }
 
   .example__conteiner {
-    width: 1220px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .example__wrapper {
