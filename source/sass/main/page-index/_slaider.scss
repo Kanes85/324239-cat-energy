@@ -9,7 +9,6 @@
   width: 280px;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .slaider__item {
@@ -17,8 +16,8 @@
   display: none;
 }
 
-.slider__switch-before:checked ~ .slaider__wrapper .slaider__item--before,
-.slider__switch-after:checked ~ .slaider__wrapper .slaider__item--after {
+.slider__switch-before:checked ~ .slaider__item--before,
+.slider__switch-after:checked ~ .slaider__item--after {
   display: block;
 }
 
@@ -47,8 +46,8 @@
 }
 
 .slider__switch {
-  position: relative;
-  bottom: -293px;
+  position: absolute;
+  bottom: 15px;
   left: 118px;
   z-index: 50;
   display: inline-block;
@@ -101,16 +100,17 @@
 
   .slaider__image-before {
     position: absolute;
-    top: -186px;
+    top: -168px;
     left: 47px;
     width: 688px;
     height: 515px;
+
     clip: rect(auto, 337px, auto, auto);
   }
 
   .slaider__image-after {
     position: absolute;
-    top: -186px;
+    top: -168px;
     left: 49px;
     display: block;
     width: 685px;
@@ -119,7 +119,7 @@
   }
 
   .slider__switch {
-    bottom: -368px;
+    bottom: -380px;
     left: 168px;
     width: 429px;
     height: 6px;
@@ -200,38 +200,45 @@
     background: linear-gradient(to right, #f2f2f2 58%, #eaeaea 42%);
   }
 
+  // Стиль для IE 11
+  @media (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width : 1300px) {
+    .slaider {
+      margin-left: 160px;
+    }
+  }
+
   .slaider__image-before {
-    top: -207px;
+    top: -190px;
     left: 31px;
     clip: rect(auto, 365px, auto, auto);
   }
 
   .slaider__image-after {
-    top: -208px;
+    top: -191px;
     left: 32px;
     clip: rect(auto, auto, auto, 364px);
   }
 
   .slider__switch-label-before {
-    bottom: 68px;
+    bottom: 69px;
     left: 110px;
   }
 
   .slider__switch-label-after {
     right: 0;
-    bottom: 68px;
-  }
-
-  .slider__switch-label:hover {
-    bottom: 68px;
-  }
-
-  .slider__switch-label:active {
     bottom: 69px;
   }
 
+  .slider__switch-label:hover {
+    bottom: 69px;
+  }
+
+  .slider__switch-label:active {
+    bottom: 70px;
+  }
+
   .slider__switch {
-    bottom: -367px;
+    bottom: -380px;
     left: 179px;
   }
 }

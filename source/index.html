@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Cat Energy</title>
 </head>
@@ -17,34 +18,33 @@
   </div>
 
   <header class="page-header">
-    <!-- Cat Energy -->
     <div class="page-header__conteiner page-header__conteiner--background">
-    <div class="page-header__logo logo-image">
-      <picture>
-        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="logo-image__picture" src="img/logo-mobile.svg" width="195" height="45" alt="Логотип Cat Energy">
-      </picture>
+      <div class="page-header__logo logo-image">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo-image__picture" src="img/logo-mobile.svg" width="195" height="45" alt="Логотип Cat Energy">
+        </picture>
+      </div>
+      <div class="control-menu">
+        <button class="control-menu__btn control-menu__hamburger">
+          <span class="visually-hidden">Меню</span>
+        </button>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list main-nav__list--withe site-list">
+          <li class="site-list__item">
+            <a class="site-list__item-link site-list__item-link--white site-list__item-link--active site-list__item-link--white-active" href="">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link site-list__item-link--white" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__item-link site-list__item-link--white" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="control-menu">
-      <button class="control-menu__btn control-menu__hamburger">
-        <span class="visually-hidden">Меню</span>
-      </button>
-    </div>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <ul class="main-nav__list main-nav__list--withe site-list">
-        <li class="site-list__item">
-          <a class="site-list__item-link site-list__item-link--white site-list__item-link--active site-list__item-link--white-active" href="">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link site-list__item-link--white" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link site-list__item-link--white" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
   </header>
 
   <main class="page-main">
@@ -102,66 +102,68 @@
       <h2 class="example__title lead-titles">Живой пример</h2>
       <div class="example__row">
         <div class="example__conteiner">
-        <div class="example__wrapper">
+          <div class="example__wrapper">
 
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-          <div class="example-block__wrapper">
-            <div class="example-block__wrapper-item">
-              <div class="example-block__weight example-block__item">
-                <b class="example-block__weight-reduction example-block__date">5 кг</b>
-                <p class="example-block__weight-description">Снижение веса</p>
+            <div class="example-block__wrapper">
+              <div class="example-block__wrapper-item">
+                <div class="example-block__weight example-block__item">
+                  <b class="example-block__weight-reduction example-block__date">5 кг</b>
+                  <p class="example-block__weight-description">Снижение веса</p>
+                </div>
+
+                <div class="example-block__time example-block__item">
+                  <b class="example-block__time-day example-block__date">60 дней</b>
+                  <p class="example-block__time-description">Затрачено времени</p>
+                </div>
               </div>
-
-              <div class="example-block__time example-block__item">
-                <b class="example-block__time-day example-block__date">60 дней</b>
-                <p class="example-block__time-description">Затрачено времени</p>
-              </div>
+              <p class="example-block__cost">Затраты на питание:
+                <span class="example-block__cost-height">15 000 руб.</span></p>
             </div>
-            <p class="example-block__cost">Затраты на питание:
-              <span class="example-block__cost-height">15 000 руб.</span></p>
+
           </div>
 
-        </div>
+          <!-- Слайдер с переключателем -->
+          <div class="example__slider slaider">
+            <label class="slider__switch-label slider__switch-label-before" for="before">Было</label>
+            <label class="slider__switch-label slider__switch-label-after" for="after">Стало</label>
 
-        <!-- Слайдер с переключателем -->
-        <div class="example__slider slaider">
+            <div class="slaider__wrapper">
 
-          <input class="slider__switch-before visually-hidden" id="before" type="radio" name="example" value="cat_before" checked>
-          <label class="slider__switch-label slider__switch-label-before" for="before">Было</label>
-          <input class="slider__switch-after visually-hidden" id="after" type="radio" name="example" value="cat_after">
-          <label class="slider__switch-label slider__switch-label-after" for="after">Стало</label>
-          <div class="slider__switch"></div>
+              <input class="slider__switch-before visually-hidden" id="before" type="radio" name="example" value="cat_before" checked>
 
+              <div class="slaider__item slaider__item--before">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-          <ul class="slaider__wrapper">
-            <li class="slaider__item slaider__item--before">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="slaider__image slaider__image-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до начала программы">
+                </picture>
+              </div>
 
-                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img class="slaider__image slaider__image-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"  alt="Кот до начала программы">
-              </picture>
-            </li>
-            <li class="slaider__item slaider__item--after">
-              <picture>
-                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+              <input class="slider__switch-after visually-hidden" id="after" type="radio" name="example" value="cat_after">
 
-                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="slaider__image slaider__image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"  alt="Кот после прохождения программы">
-              </picture>
-            </li>
-          </ul>
+              <div class="slaider__item slaider__item--after">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
 
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="slaider__image slaider__image-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот после прохождения программы">
+                </picture>
+              </div>
+              <div class="slider__switch"></div>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
 
 
     </section>
@@ -183,7 +185,7 @@
       <!-- КАРТА -->
       <div class="main-footer__map">
         <iframe class="main-footer__map-live" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1541303423469"
-          width="100%" height="362" style="border:0" allowfullscreen></iframe>
+          width="320" height="362" style="border:0" allowfullscreen></iframe>
         <picture>
           <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
@@ -202,7 +204,6 @@
       <div class="main-footer__about-wrapper main-footer__about-background">
         <div class="main-footer__logo">
           <img class="main-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
-          <!-- CAT ENERGY -->
         </div>
 
         <div class="main-footer__social">
@@ -241,8 +242,8 @@
         <div class="main-footer__developers">
           <a class="main-footer__developers-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy
             <svg class="main-footer__developers-icon" width="42" height="47">
-                <use xlink:href="img/svg-sprite.svg#sprite-htmlacademy">
-              </svg>
+              <use xlink:href="img/svg-sprite.svg#sprite-htmlacademy">
+            </svg>
           </a>
         </div>
       </div>
