@@ -162,6 +162,19 @@
     right: 16px;
   }
 
+  // Стили для SVG иконок в полях
+  @-moz-document url-prefix() {
+    .contacts-data__field--phone-icon {
+      top: 11px;
+      right: 16px;
+    }
+
+    .contacts-data__field--mail-icon {
+      top: 15px;
+      right: 19px;
+    }
+  }
+
   .contacts-data {
     margin-bottom: 48px;
   }
@@ -213,5 +226,18 @@
   .contacts-data__field--phone-icon {
     top: 16px;
     right: 19px;
+  }
+
+  // Стили для SVG иконок в полях
+  @-moz-document url-prefix() {
+    .contacts-data__field--phone-icon {
+      top: 11px;
+      right: 16px;
+    }
+
+    .contacts-data__field--mail-icon {
+      top: 15px;
+      right: 19px;
+    }
   }
 }

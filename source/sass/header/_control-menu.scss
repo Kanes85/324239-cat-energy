@@ -1,5 +1,5 @@
 // Кнопка "гамбургер" для открытия меню
-.control-menu__hamburger {
+.control-menu__btn--hamburger {
   position: absolute;
   top: 23px;
   right: -3px;
@@ -19,7 +19,7 @@
 }
 
 // Крест закрывающий меню
-.control-menu__close {
+.control-menu__btn--close {
   position: absolute;
   top: 23px;
   right: -3px;

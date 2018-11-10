@@ -3,7 +3,7 @@
 }
 
 @media (min-width: 768px) {
-  .page-header__conteiner {
+  .page-header__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,7 +20,7 @@
     margin: 0;
   }
 
-  .page-header__conteiner {
+  .page-header__container {
     z-index: 50;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@
     padding-top: 31px;
   }
 
-  .page-header__conteiner--background::before {
+  .page-header__container--background::before {
     content: "";
     position: absolute;
     top: 0;
@@ -46,7 +46,7 @@
 
   @media (min-width: 1300px) and (min-resolution: 144dpi),
     (min-width: 1300px) and (min-resolution: 1.5dppx) {
-    .page-header__conteiner--background::before {
+    .page-header__container--background::before {
       background-image: url("../img/index-background-desktop@2x.jpg");
       background-size: 720px auto;
     }

@@ -1,9 +1,9 @@
-.slaider {
+.slider {
   position: relative;
   margin-bottom: 23px;
 }
 
-.slaider__wrapper {
+.slider__wrapper {
   position: relative;
   display: flex;
   width: 280px;
@@ -11,17 +11,17 @@
   padding: 0;
 }
 
-.slaider__item {
+.slider__item {
   position: relative;
   display: none;
 }
 
-.slider__switch-before:checked ~ .slaider__item--before,
-.slider__switch-after:checked ~ .slaider__item--after {
+.slider__switch-before:checked ~ .slider__item--before,
+.slider__switch-after:checked ~ .slider__item--after {
   display: block;
 }
 
-.slaider__image {
+.slider__image {
   width: 320px;
   height: 240px;
   margin-bottom: 60px;
@@ -86,7 +86,7 @@
 }
 
 @media (min-width: 768px) {
-  .slaider {
+  .slider {
     width: 768px;
     min-height: 463px;
     margin-top: 265px;
@@ -94,11 +94,11 @@
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 
-  .slaider__item {
+  .slider__item {
     display: block;
   }
 
-  .slaider__image-before {
+  .slider__image-before {
     position: absolute;
     top: -168px;
     left: 47px;
@@ -108,7 +108,7 @@
     clip: rect(auto, 337px, auto, auto);
   }
 
-  .slaider__image-after {
+  .slider__image-after {
     position: absolute;
     top: -168px;
     left: 49px;
@@ -191,7 +191,7 @@
 }
 
 @media (min-width: 1300px) {
-  .slaider {
+  .slider {
     width: 790px;
     min-height: 462px;
     margin-top: 0;
@@ -200,13 +200,13 @@
     background: linear-gradient(to right, #f2f2f2 58%, #eaeaea 42%);
   }
 
-  .slaider__image-before {
+  .slider__image-before {
     top: -190px;
     left: 31px;
     clip: rect(auto, 365px, auto, auto);
   }
 
-  .slaider__image-after {
+  .slider__image-after {
     top: -191px;
     left: 32px;
     clip: rect(auto, auto, auto, 364px);
@@ -238,7 +238,7 @@
 
 // Стиль для IE 11
 @media (-ms-high-contrast: active), (-ms-high-contrast: none) and (min-width: 1300px) {
-  .slaider {
+  .slider {
     margin-left: 160px;
   }
 }
