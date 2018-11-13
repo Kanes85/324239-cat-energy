@@ -48,7 +48,7 @@
   padding-right: 40px;
 }
 
-.contacts-data__field--mail-icon {
+.contacts-data__icon--mail {
   position: absolute;
   top: 14px;
   right: 16px;
@@ -61,7 +61,7 @@
   padding-right: 40px;
 }
 
-.contacts-data__field--phone-icon {
+.contacts-data__icon--phone {
   position: absolute;
   top: 12px;
   right: 13px;
@@ -137,10 +137,10 @@
   }
 
   .contacts-data__field {
+    height: 54px;
     padding-bottom: 12px;
     font-size: 20px;
     line-height: 20px;
-    height: 54px;
   }
 
   .contacts-data__field--mail {
@@ -153,12 +153,12 @@
     padding-left: 17px;
   }
 
-  .contacts-data__field--mail-icon {
+  .contacts-data__icon--mail {
     top: 21px;
     right: 19px;
   }
 
-  .contacts-data__field--phone-icon {
+  .contacts-data__icon--phone {
     top: 18px;
     right: 16px;
   }
@@ -203,11 +203,11 @@
     padding-left: 18px;
   }
 
-  .contacts-data__field--mail-icon {
-    margin: 0;
-    padding: 0;
+  .contacts-data__icon--mail {
     top: 20px;
     right: 20px;
+    margin: 0;
+    padding: 0;
   }
 
   .contacts-data__field--phone {
@@ -215,19 +215,8 @@
     width: 468px;
   }
 
-  .contacts-data__field--phone-icon {
+  .contacts-data__icon--phone {
     top: 16px;
     right: 19px;
   }
 }
-
-// // Стили Firefox
-// @media screen and (device-pixel-ratio: 0) and (min-width: 1300px), (min-width: 768px) {
-//   .about-cat__data {
-//     height: 55px;
-//   }
-//
-//   .contacts-data__field {
-//     height: 54px;
-//   }
-// }

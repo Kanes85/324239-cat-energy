@@ -106,32 +106,30 @@
 
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-            <div class="example-block__wrapper">
-              <div class="example-block__wrapper-item">
-                <div class="example-block__weight example-block__item">
-                  <b class="example-block__weight-reduction example-block__date">5 кг</b>
-                  <p class="example-block__weight-description">Снижение веса</p>
+            <div class="example__block">
+              <div class="example__block-wrapper-item">
+                <div class="example__block-weight example__block-item">
+                  <b class="example__block-weight-reduction example__block-date">5 кг</b>
+                  <p class="example__block-weight-description">Снижение веса</p>
                 </div>
 
-                <div class="example-block__time example-block__item">
-                  <b class="example-block__time-day example-block__date">60 дней</b>
-                  <p class="example-block__time-description">Затрачено времени</p>
+                <div class="example__block-time example__block-item">
+                  <b class="example__block-time-day example__block-date">60 дней</b>
+                  <p class="example__block-time-description">Затрачено времени</p>
                 </div>
               </div>
-              <p class="example-block__cost">Затраты на питание:
-                <span class="example-block__cost-height">15 000 руб.</span></p>
+              <p class="example__block-cost">Затраты на питание:
+                <span class="example__block-cost-height">15 000 руб.</span></p>
             </div>
 
           </div>
 
           <!-- Слайдер с переключателем -->
           <div class="example__slider slider">
-            <label class="slider__switch-label slider__switch-label-before" for="before">Было</label>
-            <label class="slider__switch-label slider__switch-label-after" for="after">Стало</label>
 
             <div class="slider__wrapper">
-
-              <input class="slider__switch-before visually-hidden" id="before" type="radio" name="example" value="cat_before" checked>
+            <input class="slider__switch-before visually-hidden" id="before" type="radio" name="example" value="cat_before" checked>
+            <label class="slider__switch-label slider__switch-label-before" for="before">Было</label>
 
               <div class="slider__item slider__item--before">
                 <picture>
@@ -146,6 +144,7 @@
               </div>
 
               <input class="slider__switch-after visually-hidden" id="after" type="radio" name="example" value="cat_after">
+              <label class="slider__switch-label slider__switch-label-after" for="after">Стало</label>
 
               <div class="slider__item slider__item--after">
                 <picture>
@@ -171,7 +170,7 @@
 
   <footer class="main-footer">
 
-    <section class="main-footer__date main-footer__about--shift">
+    <section class="main-footer__date main-footer__date--shift">
       <h2 class="visually-hidden">Сотрудничество и наш адрес</h2>
 
       <div class="main-footer__cooperation main-footer__cooperation--shift">

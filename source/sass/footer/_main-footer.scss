@@ -149,7 +149,6 @@
 
 .main-footer__developers-link {
   @include link;
-  position: relative;
   margin-bottom: 30px;
   font-size: 16px;
   line-height: 16px;
@@ -221,7 +220,7 @@
     padding-bottom: 34px;
   }
 
-  .main-footer__about--shift {
+  .main-footer__date--shift {
     padding-top: 0;
     padding-bottom: 34px;
   }

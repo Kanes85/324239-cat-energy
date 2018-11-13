@@ -42,7 +42,7 @@
 }
 
 .slider__switch-label-after {
-  right: 59px;
+  right: 19px;
 }
 
 .slider__switch {
@@ -89,7 +89,7 @@
   .slider {
     width: 768px;
     min-height: 463px;
-    margin-top: 265px;
+    margin-top: 255px;
     margin-bottom: 25px;
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
@@ -104,7 +104,6 @@
     left: 47px;
     width: 688px;
     height: 515px;
-
     clip: rect(auto, 337px, auto, auto);
   }
 
@@ -160,7 +159,7 @@
   }
 
   .slider__switch-label {
-    bottom: 70px;
+    bottom: -393px;
     padding-bottom: 5px;
     font-size: 20px;
     line-height: 20px;
@@ -172,12 +171,12 @@
   }
 
   .slider__switch-label-after {
-    right: 99px;
+    right: -388px;
   }
 
   .slider__switch-label:hover {
     position: absolute;
-    bottom: 70px;
+    bottom: -393px;
     z-index: 50;
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(17, 17, 17, 0.4);
@@ -185,7 +184,7 @@
   }
 
   .slider__switch-label:active {
-    bottom: 71px;
+    bottom: -393px;
     border: none;
   }
 }
@@ -213,21 +212,21 @@
   }
 
   .slider__switch-label-before {
-    bottom: 69px;
+    bottom: -393px;
     left: 110px;
   }
 
   .slider__switch-label-after {
-    right: 0;
-    bottom: 69px;
+    right: -400px;
+    bottom: -393px;
   }
 
   .slider__switch-label:hover {
-    bottom: 69px;
+    bottom: -393px;
   }
 
   .slider__switch-label:active {
-    bottom: 70px;
+    bottom: -393px;
   }
 
   .slider__switch {
